@@ -1,0 +1,23 @@
+{
+  "name": "backstory_v2",
+  "version": "1.0.0",
+  "description": "backstory_v2",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebavuye/backstory_v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebavuye/backstory_v2/issues"
+  },
+  "homepage": "https://github.com/sebavuye/backstory_v2#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
