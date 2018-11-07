@@ -11,6 +11,18 @@ $tertiary-font: 'Realtime-Bold', sans-serif;
 $quaternary-font: 'Realtime-Black', sans-serif;
 $quinary-font: 'Holland', sans-serif;
 
+//* ===[ FONT SIZES ]=== *//
+//* =[ mobile ]= *//
+$font-size-lg-mb: 2rem; // mobile quotes font size
+$font-size-md-mb: 1.8rem; // mobile title font size
+$font-size-rg-mb: 1.6rem; // mobile regular body font-size
+
+//* =[ desktop ]= *//
+$font-size-lg-dt: 2.5rem; // desktop quotes font size
+$font-size-md-dt: 2rem; // desktop title font size
+$font-size-rg-dt: 1.6rem; // desktop regular body font-size
+
+
 //* ===[ BREAKPOINTS ]=== *//
 $break-s: 425px; //small breakpoint
 $break-l: 1025px; //medium breakpoint
