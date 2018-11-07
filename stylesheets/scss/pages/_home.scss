@@ -25,7 +25,7 @@
   font-family: $primary-font;
   color: $primary-color;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: $font-size-lg-mb;
   padding: 0 4rem;
   &-box-shadow {
     font-family: $tertiary-font;
@@ -34,17 +34,101 @@
   }
 }
 
+//* =[ Index spotlight image ]= *//
+.index-main-photo-shoot-spotlight-wrapper {
+  @include flexbox( $dir: column,
+                    $just: center) {
+    width: 100%;
+    margin-top: 10rem;
+  }
+}
+
+.index-main-photo-shoot-spotlight-image-wrapper {
+  width: 100%;
+    .index-main-photo-shoot-spotlight-image {
+      background: url("/images/all/index-main-photo-shoot-spotlight_image.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0 -8rem;
+      width: 100%;
+      height: 80%;
+    }
+}
+
+.index-main-photo-shoot-spotlight-article-wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 0 4rem;
+  line-height: 1.4;
+  .index-main-photo-shoot-spotlight-article-h3 {
+    font-family: $tertiary-font;
+    font-size: $font-size-md-mb;
+    color: $primary-color;
+    margin-top: 2rem;
+    &-boxshadow {
+      padding: 0 0.25rem;
+      box-shadow: inset 0 -.9rem 0 0 $box-shadow-color;
+    }
+  }
+}
+
+.index-main-photo-shoot-spotlight-article-p {
+  font-family: $secondary-font;
+  color: $primary-color;
+  font-size: $font-size-rg-mb;
+  margin-top: 2rem;
+}
+
+
 //* ===[ DESKTOP BREAKPOINT ]=== *//
 @media only screen and (min-width: 1025px) {
   //* =[ Index main top image ]= *//
-
+  .index-main-top-image-wrapper {
+    margin-top: 1rem;
+  }
   //* =[ Index main quote ]= *//
   .index-main-quote {
-    font-size: 2.5rem;
+    font-size: $font-size-lg-dt;
     padding: 0 20rem;
     &-box-shadow {
       padding: 0 0.25rem;
       box-shadow: inset 0 -1.2rem 0 0 $box-shadow-color;
     }
+  }
+
+  //* =[ Index spotlight image ]= *//
+  .index-main-photo-shoot-spotlight-wrapper {
+    @include flexbox($dir: row,
+    $just: space-between) {
+      width: 100%;
+      align-items: stretch;
+    }
+  }
+
+  .index-main-photo-shoot-spotlight-image-wrapper {
+    width: 48%;
+    .index-main-photo-shoot-spotlight-image {
+      height: 70rem;
+      background-position: 0 0;
+    }
+  }
+
+  .index-main-photo-shoot-spotlight-article-wrapper {
+    width: 48%;
+    line-height: 1.2;
+    position: relative;
+    padding: 0;
+    .index-main-photo-shoot-spotlight-article-h3 {
+      margin-top: 0;
+      font-size: $font-size-md-dt;
+    }
+  }
+
+  .index-main-photo-shoot-spotlight-article-p {
+    font-family: $secondary-font;
+    color: $primary-color;
+    font-size: $font-size-rg-dt;
+    margin-top: 2rem;
+    padding-bottom: 20rem;
   }
 }
