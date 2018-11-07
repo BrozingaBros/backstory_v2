@@ -1,0 +1,113 @@
+//* ===[ MOBILE BREAKPOINT ]=== *//
+.header-body {
+  width: 100%;
+  margin: 2rem auto 0 auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-body {
+  @include flexbox($dir: column,
+  $just: center,
+  $ali: center) {
+    width: 100%;
+  }
+}
+
+.nav-body-logo-wrapper {
+  width: 50%;
+}
+
+.nav-body-logo-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-color;
+  }
+}
+
+.nav-body-logo {
+  width: 100%;
+}
+
+.nav-body-list-wrapper {
+  @include flexbox($dir: column, $just: center, $ali: center) {
+    margin-top: 2rem;
+    list-style: none;
+    width: 50%;
+  }
+}
+
+.nav-body-list-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.nav-body-list-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-family: $primary-font;
+  font-weight: normal;
+  text-align: center;
+  color: $primary-color;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $hover-color;
+  }
+}
+
+//* ===[ DESKTOP BREAKPOINT ]=== *//
+@media only screen and (min-width: 1025px) {
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .nav-body {
+    @include flexbox($dir: row,
+    $just: space-between,
+    $ali: flex-end) {
+      width: 100%;
+    }
+  }
+
+  .nav-body-logo-wrapper {
+    width: 20%;
+  }
+
+  .nav-body-list-wrapper {
+    @include flexbox($dir: row,
+    $just: flex-end,
+    $ali: flex-end) {
+
+      margin-top: 0rem;
+      width: 100%;
+    }
+  }
+
+  .nav-body-list-item {
+    display: inline;
+    width: initial;
+    margin: 0 0 0 2rem;
+  }
+
+  .nav-body-list-link {
+    display: inline;
+    text-align: right;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $hover-color;
+    }
+  }
+
+}

@@ -1,0 +1,15 @@
+//* ===[ COLORS ]=== *//
+$primary-color: #070709; // black
+$secondary-color: #ffffff; // background color
+$hover-color: lighten( $primary-color, 50% ); //hover on links
+
+//* ===[ FONT STACKS ]=== *//
+$primary-font: 'Realtime', sans-serif;
+$primary-font: 'Realtime-Light', sans-serif;
+$tertiary-font: 'Realtime-Bold', sans-serif;
+$quaternary-font: 'Realtime-Black', sans-serif;
+$quinary-font: 'Holland', sans-serif;
+
+//* ===[ BREAKPOINTS ]=== *//
+$break-s: 425px; //small breakpoint
+$break-l: 1025px; //medium breakpoint
