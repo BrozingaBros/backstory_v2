@@ -9,3 +9,12 @@
   align-items: $ali;
   @content
 }
+
+//* ===[ BUTTON ]=== *//
+@mixin button {
+  border: 1px solid $primary-color;
+  background: $secondary-color;
+  font-family: $tertiary-font;
+  padding: .6rem 1.5rem 1rem 1.5rem;
+  @content
+}

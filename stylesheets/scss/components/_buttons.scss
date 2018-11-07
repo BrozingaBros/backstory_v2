@@ -1,0 +1,27 @@
+//* ===[ MOBILE BREAKPOINT ]=== *//
+
+//* =[ button ]= *//
+.index-main-photo-shoot-spotlight-article-button {
+  @include button {
+    width: 50%;
+    margin-top: 6rem;
+    font-size: $font-size-rg-mb;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .index-main-photo-shoot-spotlight-article-button {
+    @include button {
+      position: absolute;
+      bottom: 0;
+      left: 32%;
+      cursor: pointer;
+      font-size: $font-size-rg-dt;
+      &:hover {
+        background-color: $hover-color;
+        color: $secondary-color;
+      }
+    }
+  }
+
+}
