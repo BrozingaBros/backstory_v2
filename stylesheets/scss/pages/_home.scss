@@ -1,4 +1,6 @@
 //* ===[ MOBILE BREAKPOINT ]=== *//
+
+//* =[ Index main top image ]= *//
 .index-main-top-image-wrapper {
   display: flex;
   width: 100%;
@@ -6,5 +8,43 @@
   .index-main-top-image {
     width: 100%;
     align-self: center;
+  }
+}
+
+//* =[ Index main quote ]= *//
+.index-main-quote-wrapper {
+  @include flexbox ($just: center) {
+    width: 100%;
+    margin-top: 5rem;
+    align-content: center;
+  }
+}
+
+.index-main-quote {
+  text-align: center;
+  font-family: $primary-font;
+  color: $primary-color;
+  font-weight: normal;
+  font-size: 1.5rem;
+  padding: 0 4rem;
+  &-box-shadow {
+    font-family: $tertiary-font;
+    padding: 0 0.25rem;
+    box-shadow: inset 0 -.7rem 0 0 $box-shadow-color;
+  }
+}
+
+//* ===[ DESKTOP BREAKPOINT ]=== *//
+@media only screen and (min-width: 1025px) {
+  //* =[ Index main top image ]= *//
+
+  //* =[ Index main quote ]= *//
+  .index-main-quote {
+    font-size: 2.5rem;
+    padding: 0 20rem;
+    &-box-shadow {
+      padding: 0 0.25rem;
+      box-shadow: inset 0 -1.2rem 0 0 $box-shadow-color;
+    }
   }
 }
