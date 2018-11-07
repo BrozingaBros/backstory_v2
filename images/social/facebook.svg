@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="149px" height="315px" viewBox="0 0 149 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="facebook" transform="translate(-168.000000, -85.000000)">
+            <path d="M200.765625,400 L266.03125,400 L266.03125,242.414062 L309.832031,242.414062 C309.832031,242.414062 313.933594,216.984375 315.933594,189.179688 L266.285156,189.179688 L266.285156,152.914062 C266.285156,147.496094 273.394531,140.21875 280.441406,140.21875 L316.003906,140.21875 L316.003906,85 L267.636719,85 C199.160156,85 200.765625,138.082031 200.765625,146.007812 L200.765625,189.363281 L168.996094,189.363281 L168.996094,242.394531 L200.765625,242.394531 L200.765625,400 Z" id="Path" fill="#000000"></path>
+            <polygon id="Shape" fill-rule="nonzero" points="0 0 0 485 485 485 485 0"></polygon>
+        </g>
+    </g>
+</svg>
