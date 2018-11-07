@@ -1,6 +1,5 @@
 //* =[ Base ]= *//
-@import "base/base",
-        "base/reset",
+@import "base/reset",
         "base/typography";
 
 //* =[ Helpers ]= *//
@@ -14,7 +13,8 @@
         "components/navigation";
 
 //* =[ Layout ]= *//
-@import "layout/header",
+@import "layout/base",
+        "layout/header",
         "layout/footer",
         "layout/forms";
 
