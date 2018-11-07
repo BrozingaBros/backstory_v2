@@ -1,0 +1,11 @@
+//* ===[ FLEXBOX ]=== *//
+@mixin flexbox ($disp: flex,
+                 $dir: null,
+                $just: null,
+                 $ali: null) {
+  display: $disp;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $ali;
+  @content
+}
