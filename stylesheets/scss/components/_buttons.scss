@@ -9,7 +9,77 @@
   }
 }
 
+//* =[ social media ]= *//
+.footer-icons-wrapper {
+  @include flexbox ($dir: row, $just: center, $ali: flex-start) {
+    width: auto;
+    margin-top: 2rem;
+  }
+
+}
+.footer-icons-fb-wrapper {
+  margin: 0 1rem 0 0;
+}
+
+.footer-icons-in-wrapper {
+  margin: 0 0 0 1rem;
+}
+
+//* =[ facebook ]= *//
+.f-icons-fb {
+  width: 4rem;
+  stroke: $primary-color;
+  .f-icons-fb-lg {
+    fill:$primary-color;
+    stroke:$primary-color;
+    stroke-width:2;
+  }
+}
+
+.f-icons-fb-bq {
+  stroke:$primary-color;
+  stroke-width:2;
+  fill: none;
+  x:1;
+  y:1;
+  width:97%;
+  height: 97%;
+}
+
+//* =[ instagram ]= *//
+.f-icons-in {
+  width: 4rem;
+  .f-icons-in-bq {
+    stroke:$primary-color;
+    stroke-width: 4;
+    fill: none;
+    width: 100%;
+  }
+  .f-icons-in-lr-crcl {
+    stroke: $primary-color;
+    fill: none;
+    stroke-width:2;
+  }
+}
+
+.f-icons-in-sm-crcl{
+  fill: $primary-color;
+  stroke: none;
+  cx:53;
+  cy:23;
+  r:3
+}
+
+.f-icons-in-m-crcl {
+  fill: $primary-color;
+  stroke: none;
+  cx:38;
+  cy:38;
+  r:12;
+}
+
 @media only screen and (min-width: 1025px) {
+  //* =[ button ]= *//
   .index-main-photo-shoot-spotlight-article-button {
     @include button {
       position: absolute;
@@ -21,5 +91,21 @@
         background-color: $hover-color;
       }
     }
+  }
+
+  .footer-icons-fb-wrapper {
+    margin: 0 .2rem 0 0;
+  }
+
+  .footer-icons-in-wrapper {
+    margin: 0 0 0 0.2rem;
+  }
+
+  .f-icons-fb {
+    width: 3.5rem;
+  }
+
+  .f-icons-in {
+    width: 3.5rem;
   }
 }

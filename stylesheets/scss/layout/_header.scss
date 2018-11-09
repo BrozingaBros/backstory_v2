@@ -1,5 +1,5 @@
 //* ===[ MOBILE BREAKPOINT ]=== *//
-.header-body {
+.header {
   width: 100%;
   margin: 2rem auto 0 auto;
 }
@@ -38,6 +38,7 @@
 
 .nav-body-list-wrapper {
   @include flexbox($dir: column, $just: center, $ali: center) {
+    display: none;
     margin-top: 2rem;
     list-style: none;
     width: 50%;
@@ -63,6 +64,7 @@
   &:focus,
   &:active {
     color: $hover-color;
+    font-weight: 600;
   }
 }
 
@@ -83,6 +85,10 @@
 
   .nav-body-logo-wrapper {
     width: 20%;
+  }
+
+  .nav-body-logo {
+    width: 65%;
   }
 
   .nav-body-list-wrapper {
