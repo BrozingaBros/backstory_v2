@@ -25,11 +25,12 @@
   color: $primary-color;
   font-weight: normal;
   font-size: $font-size-lg-mb;
+  line-height: 1.15;
   padding: 0 4rem;
   &-box-shadow {
     font-family: $tertiary-font;
     padding: 0 0.25rem;
-    box-shadow: inset 0 -.7rem 0 0 $box-shadow-color;
+    box-shadow: inset 0 -1.2rem 0 0 $box-shadow-color;
   }
 }
 
@@ -50,7 +51,7 @@
       background-repeat: no-repeat;
       background-position: 0 -8rem;
       width: 100%;
-      height: 80%;
+      height: 50%;
     }
 }
 
@@ -62,11 +63,12 @@
   .index-main-photo-shoot-spotlight-article-h3 {
     font-family: $tertiary-font;
     font-size: $font-size-md-mb;
+    line-height: 1.14;
     color: $primary-color;
     margin-top: 2rem;
     &-boxshadow {
       padding: 0 0.25rem;
-      box-shadow: inset 0 -.9rem 0 0 $box-shadow-color;
+      box-shadow: inset 0 -1.1rem 0 0 $box-shadow-color;
     }
   }
 }
@@ -75,16 +77,31 @@
   font-family: $secondary-font;
   color: $primary-color;
   font-size: $font-size-rg-mb;
+  line-height: 1.25;
   margin-top: 2rem;
 }
 
 //* ===[ TABLET BREAKPOINT ]=== *//
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: $break-m) {
+  .index-main-quote {
+    padding: 0 20rem;
+  }
+
+  .index-main-photo-shoot-spotlight-image-wrapper {
+    .index-main-photo-shoot-spotlight-image {
+      background: url("/images/all/index-main-photo-shoot-spotlight_image-mobile.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0 -20rem;
+      width: 100%;
+      height: 80%;
+    }
+  }
 }
 
 
 //* ===[ DESKTOP BREAKPOINT ]=== *//
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: $break-l) {
   //* =[ Index main top image ]= *//
   .index-main-top-image-wrapper {
     margin-top: 1rem;
@@ -92,10 +109,11 @@
   //* =[ Index main quote ]= *//
   .index-main-quote {
     font-size: $font-size-lg-dt;
+    line-height: 1.25;
     padding: 0 20rem;
     &-box-shadow {
       padding: 0 0.25rem;
-      box-shadow: inset 0 -1.2rem 0 0 $box-shadow-color;
+      box-shadow: inset 0 -1.6rem 0 0 $box-shadow-color;
     }
   }
 
@@ -125,6 +143,7 @@
     .index-main-photo-shoot-spotlight-article-h3 {
       margin-top: 0;
       font-size: $font-size-md-dt;
+      line-height: 1.25;
     }
   }
 
@@ -132,6 +151,7 @@
     font-family: $secondary-font;
     color: $primary-color;
     font-size: $font-size-rg-dt;
+    line-height: 1.375;
     margin-top: 2rem;
     padding-bottom: 20rem;
   }
