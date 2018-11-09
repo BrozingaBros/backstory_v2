@@ -4,7 +4,6 @@
 .index-main-top-image-wrapper {
   display: flex;
   width: 100%;
-  margin-top: 5rem;
   .index-main-top-image {
     width: 100%;
     align-self: center;
@@ -78,6 +77,11 @@
   font-size: $font-size-rg-mb;
   margin-top: 2rem;
 }
+
+//* ===[ TABLET BREAKPOINT ]=== *//
+@media only screen and (min-width: 720px) {
+}
+
 
 //* ===[ DESKTOP BREAKPOINT ]=== *//
 @media only screen and (min-width: 1025px) {
