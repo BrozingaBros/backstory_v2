@@ -87,6 +87,10 @@
     width: 20%;
   }
 
+  .nav-body-logo {
+    width: 65%;
+  }
+
   .nav-body-list-wrapper {
     @include flexbox($dir: row,
     $just: flex-end,
