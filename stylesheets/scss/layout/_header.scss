@@ -1,7 +1,7 @@
 //* ===[ MOBILE BREAKPOINT ]=== *//
 .header {
   width: 100%;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 5rem auto;
 }
 
 .container {
@@ -18,7 +18,12 @@
 }
 
 .nav-body-logo-wrapper {
-  width: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-body-logo {
+  width: 40%;
 }
 
 .nav-body-logo-link {
@@ -30,10 +35,6 @@
   &:active {
     color: $primary-color;
   }
-}
-
-.nav-body-logo {
-  width: 100%;
 }
 
 .nav-body-list-wrapper {
@@ -68,8 +69,19 @@
   }
 }
 
+//* ===[ TABLET BREAKPOINT ]=== *//
+@media only screen and (min-width: 720px) {
+  .nav-body-logo {
+    width: 60%;
+  }
+}
+
 //* ===[ DESKTOP BREAKPOINT ]=== *//
 @media only screen and (min-width: 1025px) {
+  .header {
+    margin: 2rem auto 1rem auto;
+  }
+
   .container {
     width: 60%;
     margin: 0 auto;

@@ -1,0 +1,87 @@
+//* ===[ MOBILE BREAKPOINT ]=== *//
+
+.wrks-wrp {
+  @include flexbox($dir: column) {
+  }
+}
+
+.wrks-wrp-tr {
+  @include flexbox($dir: column) {
+  }
+}
+
+//* =[ Portfolio - Title ]= *//
+.wrks-wrp-tr-t {
+  @include flexbox($just: center, $ali: center){
+    margin-bottom: 2rem;
+  }
+}
+
+.wrks-tr-t-h2 {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: $font-size-lg-mb;
+  padding: 0 0.25rem;
+  box-shadow: inset 0 -.7rem 0 0 $box-shadow-color;
+}
+
+//* =[ Portfolio - Content ]= *//
+.wrks-wrp-tr-c {
+  @include flexbox($dir:column, $ali: flex-start) {
+  }
+}
+
+.wrk-tr {
+  width: 100%;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.wrk-tr-lnk {
+  display: block;
+  text-decoration: none;
+}
+
+.wrk-tr-img-wrp,
+.wrk-tr-img {
+  width: 100%;
+}
+
+.wrk-tr-t-h3 {
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: $font-size-rg-mb;
+  margin: .5rem 0 2rem 0;
+}
+
+//* ===[ DESKTOP BREAKPOINT ]=== *//
+@media only screen and (min-width: 1025px) {
+  //* =[ Portfolio - Content ]= *//
+  .wrks-wrp {
+    margin-top: 6rem;
+  }
+
+  .wrks-wrp-tr-t {
+    margin-bottom: 2rem;
+  }
+
+  .wrks-wrp-tr-c {
+    @include flexbox($dir:row, $just:space-between, $ali:center) {
+    }
+  }
+
+  .wrk-tr-img {
+
+  }
+
+  .wrk-tr {
+    width: 48%;
+    margin: 0;
+  }
+
+  .wrk-tr-t-h3 {
+    margin: 1rem 0 0 0;
+  }
+}
+
+
