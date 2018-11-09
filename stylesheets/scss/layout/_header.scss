@@ -1,7 +1,7 @@
 //* ===[ MOBILE BREAKPOINT ]=== *//
 .header {
   width: 100%;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 5rem auto;
 }
 
 .container {
@@ -70,6 +70,10 @@
 
 //* ===[ DESKTOP BREAKPOINT ]=== *//
 @media only screen and (min-width: 1025px) {
+  .header {
+    margin: 2rem auto 1rem auto;
+  }
+
   .container {
     width: 60%;
     margin: 0 auto;
