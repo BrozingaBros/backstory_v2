@@ -11,13 +11,13 @@
 }
 
 //* =[ Portfolio - Title ]= *//
-.wrks-wrp-tr-t {
+.wrks-wrp-t {
   @include flexbox($just: center, $ali: center){
     margin-bottom: 2rem;
   }
 }
 
-.wrks-tr-t-h2 {
+.wrks-t-h2 {
   font-family: $primary-font;
   font-weight: 600;
   font-size: $font-size-lg-mb;
@@ -26,28 +26,28 @@
 }
 
 //* =[ Portfolio - Content ]= *//
-.wrks-wrp-tr-c {
+.wrks-wrp-c {
   @include flexbox($dir:column, $ali: flex-start) {
   }
 }
 
-.wrk-tr {
+.wrk {
   width: 100%;
   margin: 0 0 2rem 0;
   text-align: center;
 }
 
-.wrk-tr-lnk {
+.wrk-lnk {
   display: block;
   text-decoration: none;
 }
 
-.wrk-tr-img-wrp,
-.wrk-tr-img {
+.wrk-img-wrp,
+.wrk-img {
   width: 100%;
 }
 
-.wrk-tr-t-h3 {
+.wrk-t-h3 {
   font-family: $tertiary-font;
   font-size: $font-size-md-mb;
   margin: .5rem 0 2rem 0;
@@ -60,25 +60,25 @@
     margin-top: 6rem;
   }
 
-  .wrks-wrp-tr-t {
+  .wrks-wrp-t {
     margin-bottom: 2rem;
   }
 
-  .wrks-wrp-tr-c {
+  .wrks-wrp-c {
     @include flexbox($dir:row, $just:space-between, $ali:center) {
     }
   }
 
-  .wrk-tr-img {
+  .wrk-img {
 
   }
 
-  .wrk-tr {
+  .wrk {
     width: 48%;
     margin: 0;
   }
 
-  .wrk-tr-t-h3 {
+  .wrk-t-h3 {
     margin: 1rem 0 0 0;
   }
 }
