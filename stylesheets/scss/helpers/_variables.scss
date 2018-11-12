@@ -29,6 +29,7 @@ $font-size-rg-dt: 1.6rem; // desktop regular body font-size - body - 16px - line
 
 
 //* ===[ BREAKPOINTS ]=== *//
-$break-s: 320px; //small breakpoint
-$break-m: 720px; //medium breakpoint
-$break-l: 1025px; //medium breakpoint
+$break-s: 576px;   // small devices - landscape phones - less than 576px,
+$break-m: 768px;    // medium devices - tablets - 768px and up,
+$break-l: 992px;    // large devices - desktops - 992px and up,
+$break-xl: 1200px   // x-large devices - x-large desktops - 1200px and up.

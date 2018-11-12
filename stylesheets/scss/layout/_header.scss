@@ -1,4 +1,4 @@
-//* ===[ MOBILE BREAKPOINT ]=== *//
+//* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
 .header {
   width: 100%;
   margin: 2rem auto 5rem auto;
@@ -69,15 +69,25 @@
   }
 }
 
-//* ===[ TABLET BREAKPOINT ]=== *//
-@media only screen and (min-width: 720px) {
+
+//* ===[ SMALL BREAKPOINT - landscape phones]=== *//
+@media only screen and (min-width: $break-s) {
+  .nav-body-logo {
+    width: 30%;
+  }
+}
+
+
+//* ===[ MEDIUM BREAKPOINT - tablets ]=== *//
+@media only screen and (min-width: $break-m) {
   .nav-body-logo {
     width: 20%;
   }
 }
 
-//* ===[ DESKTOP BREAKPOINT ]=== *//
-@media only screen and (min-width: 1025px) {
+
+//* ===[ LARGE BREAKPOINT - desktops ]=== *//
+@media only screen and (min-width: $break-l) {
   .header {
     margin: 2rem auto 1rem auto;
   }
