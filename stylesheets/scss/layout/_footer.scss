@@ -24,7 +24,7 @@
 }
 
 //* ===[ DESKTOP BREAKPOINT ]=== *//
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: $break-l) {
   .footer {
     margin: 18rem 0 4rem 0;
   }

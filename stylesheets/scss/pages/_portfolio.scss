@@ -1,4 +1,4 @@
-//* ===[ MOBILE BREAKPOINT ]=== *//
+//* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
 
 .wrks-wrp {
   @include flexbox($dir: column) {
@@ -48,14 +48,13 @@
 }
 
 .wrk-tr-t-h3 {
-  font-family: $primary-font;
-  font-weight: 600;
-  font-size: $font-size-rg-mb;
+  font-family: $tertiary-font;
+  font-size: $font-size-md-mb;
   margin: .5rem 0 2rem 0;
 }
 
-//* ===[ DESKTOP BREAKPOINT ]=== *//
-@media only screen and (min-width: 1025px) {
+//* ===[ LARGE BREAKPOINT - desktops ]=== *//
+@media only screen and (min-width: $break-l) {
   //* =[ Portfolio - Content ]= *//
   .wrks-wrp {
     margin-top: 6rem;

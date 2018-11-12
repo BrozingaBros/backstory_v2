@@ -78,7 +78,7 @@
   r:12;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: $break-l) {
   //* =[ button ]= *//
   .index-main-photo-shoot-spotlight-article-button {
     @include button {
