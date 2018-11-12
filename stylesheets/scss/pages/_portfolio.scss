@@ -7,6 +7,7 @@
 
 .wrks-wrp-tr {
   @include flexbox($dir: column) {
+    margin-bottom: 5rem;
   }
 }
 
@@ -67,10 +68,6 @@
   .wrks-wrp-c {
     @include flexbox($dir:row, $just:space-between, $ali:center) {
     }
-  }
-
-  .wrk-img {
-
   }
 
   .wrk {
