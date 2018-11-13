@@ -17,6 +17,22 @@
   }
 }
 
+.nav-body-r-menu-wrpr {
+  @include flexbox($just: center, $ali: center) {
+    width: 80%;
+    border-top: 1px solid $primary-color;
+    border-bottom: 1px solid $primary-color;
+    margin: 0 0 5rem 0;
+  }
+  .nav-body-r-menu-h2 {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: $font-size-rg-mb;
+    text-transform: uppercase;
+    padding: .6rem 0 1rem 0;
+  }
+}
+
 .nav-body-logo-wrapper {
   width: 100%;
   text-align: center;
@@ -103,6 +119,14 @@
     $ali: flex-end) {
       width: 100%;
     }
+  }
+
+  .nav-body-r-menu-wrpr {
+    display:none;
+    }
+
+  .nav-body-r-menu-h2 {
+    display:none;
   }
 
   .nav-body-logo-wrapper {
