@@ -50,8 +50,17 @@
 
 .wrk-t-h3 {
   font-family: $tertiary-font;
-  font-size: $font-size-md-mb;
+  font-size: $font-size-rg-mb;
   margin: .5rem 0 2rem 0;
+}
+
+//* ===[ SMALL BREAKPOINT - landscape phones]=== *//
+
+//* ===[ MEDIUM BREAKPOINT - tablets ]=== *//
+@media only screen and (min-width: $break-m) {
+  .wrk-t-h3 {
+    font-size: $font-size-rg-tb;
+  }
 }
 
 //* ===[ LARGE BREAKPOINT - desktops ]=== *//
@@ -80,4 +89,4 @@
   }
 }
 
-
+//* ===[ X-LARGE BREAKPOINT - xl-desktops ]=== *//
