@@ -38,6 +38,49 @@
   margin-top: 2rem;
 }
 
+.abu-b-wrp {
+  @include flexbox($dir:column, $just: center, $ali: center) {
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+}
+
+.abu-b-img-wrp {
+  width: 100%;
+}
+
+.abu-b-img {
+  width: 100%;
+}
+
+.abu-b-c-wrp {
+  @include flexbox($dir:column, $just: center, $ali: center) {
+    width: 100%;
+  }
+}
+
+.abu-b-c-li-wrp {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+
+.abu-b-c-li-t {
+  font-family: $tertiary-font;
+  font-size: $font-size-md-mb;
+  line-height: 1.14;
+  color: $primary-color;
+  margin: 0 0 1rem;
+}
+
+.abu-b-c-li {
+  font-family: $secondary-font;
+  color: $primary-color;
+  font-size: $font-size-rg-mb;
+  line-height: 1.25;
+}
+
 //* ===[ SMALL BREAKPOINT - landscape phones]=== *//
 @media only screen and (min-width: $break-s) {}
 
@@ -57,6 +100,20 @@
       margin-top: 0;
     }
   }
+
+  .abu-b-c-wrp {
+    @include flexbox($dir:row, $just: space-between, $ali: flex-start) {
+      width: 100%;
+    }
+  }
+
+  .abu-b-c-li-wrp-gr {
+    text-align: left;
+  }
+
+  .abu-b-c-li-wrp-ed {
+    text-align: right;
+  }
 }
 
 //* ===[ LARGE BREAKPOINT - desktops ]=== *//
@@ -75,6 +132,16 @@
   }
 
   .abu-t-c-p {
+    font-size: $font-size-rg-dt;
+    line-height: 1.375;
+  }
+
+  .abu-b-c-li-t {
+    font-size: $font-size-md-dt;
+    line-height: 1.25;
+  }
+
+  .abu-b-c-li {
     font-size: $font-size-rg-dt;
     line-height: 1.375;
   }
