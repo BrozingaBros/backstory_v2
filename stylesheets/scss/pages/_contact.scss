@@ -1,0 +1,70 @@
+//* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
+.cnt-t-wrp {
+  @include flexbox($dir:column, $just: center, $ali: center) {
+    width: 100%;
+  }
+}
+
+.cnt-t-c-wrp {
+  width: 100%;
+  text-align: center;
+}
+
+.cnt-t-c-nfo {
+  font-family: $primary-font;
+  font-size: $font-size-rg-mb;
+  line-height: 1.25;
+  color: $primary-color;
+  margin: 0 0 6rem 0;
+}
+
+.cnt-t-c-nfo-tt {
+  font-family: $primary-font;
+  font-size: $font-size-rg-mb;
+  font-weight: 600;
+  line-height: 1.25;
+  color: $primary-color;
+  margin: 0 0 5rem 0;
+}
+
+.cnt-t-c-mps-wrp {
+  width: 100%;
+}
+
+.cnt-t-c-mps {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+}
+
+//* ===[ LARGE BREAKPOINT - desktops ]=== *//
+@media only screen and (min-width: $break-l) {
+  .cnt-t-wrp {
+    @include flexbox($dir:row, $just: center, $ali: flex-start) {
+      width: 100%;
+      margin: 6rem 0 0 0;
+    }
+  }
+
+  .cnt-t-c-nfo {
+    font-size: $font-size-rg-dt;
+    line-height: 1.375;
+    margin: 0 0 3rem 0;
+  }
+
+  .cnt-t-c-nfo-tt {
+    font-size: $font-size-rg-dt;
+    font-weight: 600;
+    line-height: 1.375;
+  }
+
+  .cnt-t-c-wrp {
+    width: 50%;
+    text-align: left;
+  }
+
+  .cnt-t-c-mps-wrp {
+    width: 70%;
+  }
+}
