@@ -22,7 +22,7 @@
     width: 80%;
     border-top: 1px solid $primary-color;
     border-bottom: 1px solid $primary-color;
-    margin: 0 0 5rem 0;
+    margin: 0;
   }
   .nav-body-r-menu-h2 {
     font-family: $primary-font;
@@ -36,6 +36,8 @@
 .nav-body-logo-wrapper {
   width: 100%;
   text-align: center;
+  order: 3;
+  margin-top: 5rem;
 }
 
 .nav-body-logo {
@@ -55,11 +57,23 @@
 
 .nav-body-list-wrapper {
   @include flexbox($dir: column, $just: center, $ali: center) {
-    display: none;
-    margin-top: 2rem;
+    opacity: 0;
     list-style: none;
-    width: 50%;
+    width: 80%;
+    height: 0;
+    transition: 1s ease-in-out;
+    transform: translate(0, -15px);
+    visibility: hidden;
   }
+}
+
+.nav-body-list-wrapper--shown {
+  opacity: 1;
+  height: 13rem;
+  border-bottom: 1px solid $primary-color;
+  transition: 1s ease-in-out;
+  transform: translate(0, 15px);
+  visibility: visible;
 }
 
 .nav-body-list-item {
@@ -132,6 +146,7 @@
   .nav-body-logo-wrapper {
     width: 20%;
     text-align: left;
+    order: initial;
   }
   
   
@@ -144,9 +159,12 @@
     @include flexbox($dir: row,
     $just: flex-end,
     $ali: flex-end) {
-
+      height: inherit;
+      opacity: 1;
+      transform: none;
       margin-top: 0rem;
       width: 100%;
+      visibility: visible;
     }
   }
 
