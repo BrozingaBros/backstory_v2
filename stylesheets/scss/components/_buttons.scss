@@ -9,6 +9,14 @@
   }
 }
 
+.cnt-b-c-btn {
+  @include button {
+    width: 100%;
+    margin-top: 4rem;
+    font-size: $font-size-rg-mb;
+  }
+}
+
 //* =[ social media ]= *//
 .footer-icons-wrapper {
   @include flexbox ($dir: row, $just: center, $ali: flex-start) {
@@ -107,5 +115,14 @@
 
   .f-icons-in {
     width: 3.5rem;
+  }
+
+  .cnt-b-c-btn {
+    @include button {
+      width: 48%;
+      float: right;
+      margin-top: 4rem;
+      font-size: $font-size-rg-mb;
+    }
   }
 }

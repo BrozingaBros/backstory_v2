@@ -29,6 +29,7 @@
 
 .cnt-t-c-mps-wrp {
   width: 100%;
+  margin: 0 0 6rem;
 }
 
 .cnt-t-c-mps {
@@ -38,10 +39,21 @@
   margin: 0;
 }
 
+.cnt-b-wrp {
+  @include flexbox($dir: column, $just: center, $ali: center) {
+    width: 100%;
+  }
+}
+
+.cnt-b-c-wrp {
+  width: 100%;
+}
+
+
 //* ===[ LARGE BREAKPOINT - desktops ]=== *//
 @media only screen and (min-width: $break-l) {
   .cnt-t-wrp {
-    @include flexbox($dir:row, $just: center, $ali: flex-start) {
+    @include flexbox($dir: row, $just: center, $ali: flex-start) {
       width: 100%;
       margin: 6rem 0 0 0;
     }
@@ -67,4 +79,15 @@
   .cnt-t-c-mps-wrp {
     width: 70%;
   }
+
+  .cnt-b-wrp {
+    @include flexbox($dir: row, $just: center, $ali: flex-start) {
+      width: 100%;
+    }
+  }
+
+  .cnt-b-c-wrp {
+    width: 40%;
+  }
+
 }
