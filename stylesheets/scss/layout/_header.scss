@@ -69,7 +69,7 @@
 
 .nav-body-list-wrapper--shown {
   opacity: 1;
-  height: 13rem;
+  height: 20rem;
   border-bottom: 1px solid $primary-color;
   transition: 1s ease-in-out;
   transform: translate(0, 15px);
@@ -79,7 +79,7 @@
 .nav-body-list-item {
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .nav-body-list-link {
@@ -89,6 +89,7 @@
   font-family: $primary-font;
   font-weight: normal;
   font-size: $font-size-rg-mb;
+  line-height: 1.25;
   text-align: center;
   color: $primary-color;
   &:hover,
