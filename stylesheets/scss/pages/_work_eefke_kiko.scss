@@ -1,6 +1,6 @@
 //* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
 .sw-t-wrpr {
-  @include flexbox ($dir: column, $just: center, $ali: center) {
+  @include flexbox ( $dir: column, $just: center, $ali: center) {
     width: 100%;
   }
 }

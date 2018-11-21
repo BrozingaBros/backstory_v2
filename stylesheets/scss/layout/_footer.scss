@@ -1,10 +1,10 @@
 //* ===[ MOBILE BREAKPOINT ]=== *//
 .footer {
-  margin: 6rem 0 2rem 0;
+  margin: $gutter-lg 0 $gutter-s 0;
 }
 
 .footer-wrapper {
-  @include flexbox ($dir: column, $just: center, $ali: center) {
+  @include flexbox ( $dir: column, $just: center, $ali: center ) {
     border-top: 2px solid $primary-color;
   }
 }
@@ -14,24 +14,23 @@
 }
 
 .f-icons-fb-link {
-  text-decoration: none;
   display:block;
+  text-decoration: none;
 }
 
 .f-icons-in-link {
-  text-decoration: none;
   display:block;
+  text-decoration: none;
 }
 
 //* ===[ DESKTOP BREAKPOINT ]=== *//
 @media only screen and (min-width: $break-l) {
   .footer {
-    margin: 18rem 0 4rem 0;
+    margin: $gutter-xlg 0 $gutter-lg 0;
   }
 
   .footer-wrapper {
-    @include flexbox ($dir: row, $just: space-between, $ali: center) {
-    }
+    @include flexbox ( $dir: row, $just: space-between, $ali: center ) {}
   }
 
   .footer-title {
