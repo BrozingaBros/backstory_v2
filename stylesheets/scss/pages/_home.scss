@@ -1,29 +1,7 @@
 //* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
 
 //* =[ index top image ]= *//
-.index-slideshow {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
 
-.index-main-top-image-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.index-main-top-image-wrapper {
-  @include flexbox () {
-    width: 100%;
-  }
-  .index-main-top-image {
-    width: 100%;
-    align-self: center;
-  }
-}
 
 //* =[ index quote ]= *//
 .index-main-quote-wrapper {
