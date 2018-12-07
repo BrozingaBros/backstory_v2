@@ -12,6 +12,10 @@
   }
 }
 
+.slick-slide {
+  height: auto;
+}
+
 .index-main-quote {
   @include title-h2-mb( $col: $primary-color) {
     padding: 0 4rem;
