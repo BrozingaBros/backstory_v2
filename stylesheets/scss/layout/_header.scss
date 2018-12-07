@@ -174,4 +174,19 @@
       color: $hover-color;
     }
   }
+
+  .dropdown {
+    background: url("/images/all/dropdown_arrow.svg");
+    background-size: .8rem;
+    background-repeat: no-repeat;
+    background-position: right 1rem;
+    padding-right: 1.1rem;
+    &:hover {
+      background: url("/images/all/dropdown_arrow_hover.svg");
+      background-size: .8rem;
+      background-repeat: no-repeat;
+      background-position: right 1rem;
+      padding-right: 1.1rem;
+    }
+  }
 }
