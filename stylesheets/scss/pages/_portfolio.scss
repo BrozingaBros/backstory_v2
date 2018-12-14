@@ -80,6 +80,18 @@
   .wrk-t-h4 {
     margin: $gutter-xs 0 0 0;
   }
+
+
+.wrk-img {
+  width: 100%;
+  transition: .4s ease-in-out;
+  transform: scale(1.00, 1.00);
+  &:hover {
+    opacity: .5;
+    transition: .4s ease-in-out;
+    transform: scale(1.01, 1.01);
+  }
+}
 }
 
 //* ===[ X-LARGE BREAKPOINT - xl-desktops ]=== *//

@@ -18,26 +18,6 @@
   }
 }
 
-.nav__submenu_2 {
-  background-color: #fff;
-  border: 0 solid;
-  border-bottom-width: .2rem;
-  display: none;
-  font-family: $primary-font;
-  font-size: $font-size-rg-dt;
-  padding-top: 1rem;
-  padding-right: 1.7rem;
-  opacity: 0;
-  position: absolute;
-  visibility: hidden;
-  z-index: 1000;
-
-  &-item {
-    padding: .5rem 0 .5rem .5rem;
-    text-align: left;
-  }
-}
-
 /**
 Todo: put this in a media query
  */
