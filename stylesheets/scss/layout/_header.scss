@@ -1,7 +1,7 @@
 //* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
 .header {
   width: 100%;
-  margin: 2rem auto 5rem auto;
+  margin: $gutter-s auto $gutter-lg auto;
 }
 
 .container {
@@ -10,34 +10,35 @@
 }
 
 .nav-body {
-  @include flexbox($dir: column,
-  $just: center,
-  $ali: center) {
+  @include flexbox( $dir: column, $just: center, $ali: center ) {
     width: 100%;
   }
 }
 
 .nav-body-r-menu-wrpr {
-  @include flexbox($just: center, $ali: center) {
+  @include flexbox( $just: center, $ali: center) {
     width: 80%;
+    margin: 0;
+    background: $secondary-color;
     border-top: 1px solid $primary-color;
     border-bottom: 1px solid $primary-color;
-    margin: 0;
+
   }
   .nav-body-r-menu-h2 {
-    font-family: $primary-font;
-    font-weight: 600;
-    font-size: $font-size-rg-mb;
-    text-transform: uppercase;
     padding: .6rem 0 1rem 0;
+    font-family: $primary-font;
+    font-size: $font-size-rg-mb;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: $secondary-color;
   }
 }
 
 .nav-body-logo-wrapper {
   width: 100%;
-  text-align: center;
   order: 3;
-  margin-top: 5rem;
+  margin-top: $gutter-lg;
+  text-align: center;
 }
 
 .nav-body-logo {
@@ -56,49 +57,46 @@
 }
 
 .nav-body-list-wrapper {
-  @include flexbox($dir: column, $just: center, $ali: center) {
-    opacity: 0;
-    list-style: none;
+  @include flexbox( $dir: column, $just: center, $ali: center) {
     width: 80%;
     height: 0;
-    transition: 1s ease-in-out;
-    transform: translate(0, -15px);
+    opacity: 0;
+    list-style: none;
+    background: $secondary-color;
+    transition: .2s ease-in-out;
+    transform: translate(0, -5px);
     visibility: hidden;
+    overflow: hidden;
   }
 }
 
 .nav-body-list-wrapper--shown {
+  height: 20rem;
   opacity: 1;
-  height: 13rem;
   border-bottom: 1px solid $primary-color;
-  transition: 1s ease-in-out;
-  transform: translate(0, 15px);
+  transition: .2s ease-in-out;
+  transform: translate(0, 5px);
   visibility: visible;
+  overflow: hidden;
 }
 
 .nav-body-list-item {
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: $gutter-s;
 }
 
 .nav-body-list-link {
   display: block;
   width: 100%;
-  text-decoration: none;
   font-family: $primary-font;
-  font-weight: normal;
   font-size: $font-size-rg-mb;
+  font-weight: normal;
+  line-height: 1.25;
   text-align: center;
+  text-decoration: none;
   color: $primary-color;
-  &:hover,
-  &:focus,
-  &:active {
-    color: $hover-color;
-    font-weight: 600;
-  }
 }
-
 
 //* ===[ SMALL BREAKPOINT - landscape phones]=== *//
 @media only screen and (min-width: $break-s) {
@@ -107,7 +105,6 @@
   }
 }
 
-
 //* ===[ MEDIUM BREAKPOINT - tablets ]=== *//
 @media only screen and (min-width: $break-m) {
   .nav-body-logo {
@@ -115,11 +112,10 @@
   }
 }
 
-
 //* ===[ LARGE BREAKPOINT - desktops ]=== *//
 @media only screen and (min-width: $break-l) {
   .header {
-    margin: 2rem auto 1rem auto;
+    margin: $gutter-lg auto $gutter-xs auto;
   }
 
   .container {
@@ -128,9 +124,7 @@
   }
 
   .nav-body {
-    @include flexbox($dir: row,
-    $just: space-between,
-    $ali: flex-end) {
+    @include flexbox( $dir: row, $just: space-between, $ali: flex-end ) {
       width: 100%;
     }
   }
@@ -145,25 +139,22 @@
 
   .nav-body-logo-wrapper {
     width: 20%;
-    text-align: left;
+    margin-top: 0;
     order: initial;
+    text-align: left;
   }
   
-  
-
   .nav-body-logo {
     width: 65%;
   }
 
   .nav-body-list-wrapper {
-    @include flexbox($dir: row,
-    $just: flex-end,
-    $ali: flex-end) {
+    @include flexbox( $dir: row, $just: flex-end, $ali: flex-end ) {
+      width: 100%;
       height: inherit;
+      margin-top: 0;
       opacity: 1;
       transform: none;
-      margin-top: 0rem;
-      width: 100%;
       visibility: visible;
     }
   }
@@ -171,7 +162,7 @@
   .nav-body-list-item {
     display: inline;
     width: initial;
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 $gutter-s;
   }
 
   .nav-body-list-link {
@@ -181,6 +172,20 @@
     &:focus,
     &:active {
       color: $hover-color;
+    }
+  }
+
+  .dropdown {
+    background-image: url("/images/all/dropdown_arrow.svg");
+    background-size: .8rem;
+    background-repeat: no-repeat;
+    background-position: right 1.1rem;
+    padding-right: 1.1rem;
+    &:hover {
+      background-image: url("/images/all/dropdown_arrow_hover.svg");
+    }
+    &:focus {
+      background-image: url("/images/all/dropdown_arrow_hover.svg");
     }
   }
 }

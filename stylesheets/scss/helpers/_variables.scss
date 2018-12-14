@@ -27,6 +27,11 @@ $font-size-lg-dt: 3.6rem; // desktop quotes font size h2 - 36px - line-height: 1
 $font-size-md-dt: 2.8rem; // desktop title font size h3 - 28px - line-height: 1.25em
 $font-size-rg-dt: 1.6rem; // desktop regular body font-size - body - 16px - line-height: 1.375em
 
+//* ===[ GUTTER ]=== *//
+$gutter-xs: 1rem; // x-tra small gutter
+$gutter-s: 2rem; // small gutter
+$gutter-lg: 5rem; // large gutter
+$gutter-xlg: 15rem; // x-tra large gutter
 
 //* ===[ BREAKPOINTS ]=== *//
 $break-s: 576px;   // small devices - landscape phones - less than 576px,

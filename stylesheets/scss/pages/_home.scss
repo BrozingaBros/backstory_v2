@@ -1,42 +1,36 @@
 //* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
 
-//* =[ Index main top image ]= *//
-.index-main-top-image-wrapper {
-  display: flex;
-  width: 100%;
-  .index-main-top-image {
-    width: 100%;
-    align-self: center;
-  }
-}
+//* =[ index top image ]= *//
 
-//* =[ Index main quote ]= *//
+
+//* =[ index quote ]= *//
 .index-main-quote-wrapper {
   @include flexbox ($just: center) {
     width: 100%;
-    margin-top: 5rem;
     align-content: center;
+    margin-top: 5rem;
   }
+}
+
+.slick-slide {
+  height: auto;
 }
 
 .index-main-quote {
-  text-align: center;
-  font-family: $primary-font;
-  color: $primary-color;
-  font-weight: normal;
-  font-size: $font-size-lg-mb;
-  line-height: 1.15;
-  padding: 0 4rem;
+  @include title-h2-mb( $col: $primary-color) {
+    padding: 0 4rem;
+    text-align: center;
+  }
   &-box-shadow {
-    font-family: $tertiary-font;
     padding: 0 0.25rem;
     box-shadow: inset 0 -1.2rem 0 0 $box-shadow-color;
+    font-family: $tertiary-font;
   }
 }
 
-//* =[ Index spotlight ]= *//
+//* =[ index spotlight ]= *//
 .index-main-photo-shoot-spotlight-wrapper {
-  @include flexbox( $dir: column, $just: center) {
+  @include flexbox($dir: column, $just: center, $ali: center ) {
     width: 100%;
     margin-top: 10rem;
   }
@@ -45,28 +39,17 @@
 .index-main-photo-shoot-spotlight-image-wrapper {
   width: 100%;
     .index-main-photo-shoot-spotlight-image {
-      /*background: url("/images/all/index-main-photo-shoot-spotlight_image-mobile.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 -8rem;
-      width: 100%;
-      height: 50%;*/
-
       width: 100%;
     }
 }
 
 .index-main-photo-shoot-spotlight-article-wrapper {
-  width: 100%;
+  width: 80%;
   text-align: center;
-  padding: 0 4rem;
-  line-height: 1.4;
   .index-main-photo-shoot-spotlight-article-h3 {
-    font-family: $tertiary-font;
-    font-size: $font-size-md-mb;
-    line-height: 1.14;
-    color: $primary-color;
-    margin-top: 2rem;
+    @include title-h3-mb( $col: $primary-color) {
+      margin-top: 2rem;
+    }
     &-boxshadow {
       padding: 0 0.25rem;
       box-shadow: inset 0 -1.1rem 0 0 $box-shadow-color;
@@ -75,59 +58,34 @@
 }
 
 .index-main-photo-shoot-spotlight-article-p {
-  font-family: $secondary-font;
-  color: $primary-color;
-  font-size: $font-size-rg-mb;
-  line-height: 1.25;
-  margin-top: 2rem;
+  @include text-p-mb( $col: $primary-color) {
+    margin-top: 2rem;
+  }
 }
-
 
 //* ===[ SMALL BREAKPOINT - landscape phones]=== *//
 @media only screen and (min-width: $break-s) {
+  //* =[ index main quote ]= *//
   .index-main-quote {
     padding: 0 20rem;
   }
-
-  .index-main-photo-shoot-spotlight-image-wrapper {
-    .index-main-photo-shoot-spotlight-image {
-      /*background: url("/images/all/index-main-photo-shoot-spotlight_image-mobile.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 -20rem;
-      width: 100%;
-      height: 80%;*/
-    }
-  }
 }
 
-
-//* ===[ MEDIUM BREAKPOINT - tablets ]=== *//
+//* ===[ MEDIUM BREAKPOINT - tablets]=== *//
 @media only screen and (min-width: $break-m) {
+  //* =[ index main quote ]= *//
   .index-main-quote {
     padding: 0 20rem;
   }
-
-  .index-main-photo-shoot-spotlight-image-wrapper {
-    .index-main-photo-shoot-spotlight-image {
-      /*background: url("/images/all/index-main-photo-shoot-spotlight_image-mobile.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0 -20rem;
-      width: 100%;
-      height: 80%;*/
-    }
-  }
 }
-
 
 //* ===[ LARGE BREAKPOINT - desktops ]=== *//
 @media only screen and (min-width: $break-l) {
-  //* =[ Index main top image ]= *//
+  //* =[ index main top image ]= *//
   .index-main-top-image-wrapper {
     margin-top: 1rem;
   }
-  //* =[ Index main quote ]= *//
+  //* =[ index main quote ]= *//
   .index-main-quote {
     font-size: $font-size-lg-dt;
     line-height: 1.25;
@@ -138,10 +96,9 @@
     }
   }
 
-  //* =[ Index spotlight image ]= *//
+  //* =[ index spotlight image ]= *//
   .index-main-photo-shoot-spotlight-wrapper {
-    @include flexbox($dir: row,
-    $just: space-between) {
+    @include flexbox( $dir: row, $just: space-between) {
       width: 100%;
       align-items: stretch;
     }
@@ -149,32 +106,24 @@
 
   .index-main-photo-shoot-spotlight-image-wrapper {
     width: 48%;
-    .index-main-photo-shoot-spotlight-image {
-      /*background: url("/images/all/index-main-photo-shoot-spotlight_image.jpg");
-      height: 70rem;
-      background-position: 0 0;*/
-    }
   }
 
   .index-main-photo-shoot-spotlight-article-wrapper {
     width: 48%;
-    line-height: 1.2;
     position: relative;
     padding: 0;
     .index-main-photo-shoot-spotlight-article-h3 {
-      margin-top: 0;
-      font-size: $font-size-md-dt;
-      line-height: 1.25;
+      @include title-h3-dt( $col: $primary-color) {
+        margin-top: 0;
+      }
     }
   }
 
   .index-main-photo-shoot-spotlight-article-p {
-    font-family: $secondary-font;
-    color: $primary-color;
-    font-size: $font-size-rg-dt;
-    line-height: 1.375;
-    margin-top: 2rem;
-    padding-bottom: 20rem;
+    @include text-p-dt( $col: $primary-color) {
+      margin-top: 2rem;
+      padding-bottom: 20rem;
+    }
   }
 }
 

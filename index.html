@@ -20,19 +20,26 @@
                          class="nav-body-logo">
                 </a>
             </figure>
-
             <ul class="nav-body-list-wrapper" id="menu">
                 <li class="nav-body-list-item">
                     <a href="index.html" class="nav-body-list-link">Home</a>
                 </li>
-                <li class="nav-body-list-item">
-                    <a href="portfolio.html" class="nav-body-list-link">Portfolio</a>
+                <li class="nav-body-list-item nav-item-submenu">
+                    <a href=# class="nav-body-list-link dropdown">Portfolio</a>
+                    <ul class="nav__submenu">
+                        <li class="nav__submenu-item"><a href="portfolio_wedding.html" class="nav-body-list-link">Trouw</a></li>
+                        <li class="nav__submenu-item"><a href="portfolio_newborns.html" class="nav-body-list-link">Baby</a></li>
+                    </ul>
                 </li>
                 <li class="nav-body-list-item">
                     <a href="over_ons.html" class="nav-body-list-link">Over Ons</a>
                 </li>
                 <li class="nav-body-list-item">
-                    <a href="prijzen.html" class="nav-body-list-link">Prijzen</a>
+                    <a href="prijzen.html" class="nav-body-list-link dropdown">Prijzen</a>
+                    <ul class="nav__submenu">
+                        <li class="nav__submenu-item"><a href="prijzen.html" class="nav-body-list-link">Trouw</a></li>
+                        <li class="nav__submenu-item"><a href="prijzen.html" class="nav-body-list-link">Baby</a></li>
+                    </ul>
                 </li>
                 <li class="nav-body-list-item">
                     <a href="contact.html" class="nav-body-list-link">Contact</a>
@@ -43,10 +50,18 @@
 </header>
 <main class="main">
     <div class="container">
-        <figure class="index-main-top-image-wrapper">
-            <img src="images/all/index-main-top-image.jpg" alt="Main top image of the photo shoot of Kiko and Eefke"
-                 title="Main top image" class="index-main-top-image">
-        </figure>
+        <div class="index-slideshow" id="slideshow">
+                <img src="images/all/index-main-top-image.jpg" alt="Main top image of the photo shoot of Kiko and Eefke"
+                     title="Main top image" class="index-main-top-image">
+
+                <img src="images/all/index-main-top-image_02.jpg" alt="Main top image of the photo shoot of Kiko and Eefke"
+                     title="Main top image" class="index-main-top-image">
+
+                <img src="images/all/index-main-top-image_03.jpg" alt="Main top image of the photo shoot of Kiko and Eefke"
+                     title="Main top image" class="index-main-top-image">
+        </div>
+
+
 
         <section class="index-main-quote-wrapper">
             <h2 class="index-main-quote">
@@ -75,7 +90,7 @@
                     tristique senectus et netus et malesuada fames ac turpis egestas. Cras commodo lacinia nisl, finibus
                     pretium eros.
                 </p>
-                <button type="submit" class="index-main-photo-shoot-spotlight-article-button">Bekijken</button>
+                <a href="work_eefke_kiko.html"><button type="submit" class="index-main-photo-shoot-spotlight-article-button">Bekijken</button></a>
             </article>
         </section>
     </div>
@@ -90,7 +105,7 @@
                 <figure class="footer-icons-fb-wrapper">
                     <a href="index.html" class="f-icons-fb-link">
                         <?xml version="1.0" encoding="UTF-8"?>
-                        <svg class="f-icons-fb" viewBox="0 0 76 77" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        <svg class="f-icons-fb" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="facebook">
                                 <rect class="f-icons-fb-bq"></rect>
@@ -107,7 +122,10 @@
                             <g id="instagram">
                                 <rect class="f-icons-in-bq"></rect>
                                 <path class="f-icons-in-lr-crcl"
-                                      d="M64,27 C64,18.716 57.284,12 49,12 C44.648,12 31.352,12 27,12 C18.716,12 12,18.716 12,27 C12,31.352 12,44.648 12,49 C12,57.284 18.716,64 27,64 C31.352,64 44.648,64 49,64 C57.284,64 64,57.284 64,49 C64,44.648 64,31.352 64,27 Z"></path>
+                                      d="M64,27 C64,18.716 57.284,12 49,12 C44.648,12 31.352,12 27,12 C18.716,12
+                                       12,18.716 12,27 C12,31.352 12,44.648 12,49 C12,57.284 18.716,64 27,64
+                                       C31.352,64 44.648,64 49,64 C57.284,64 64,57.284 64,49 C64,44.648
+                                       64,31.352 64,27 Z"></path>
                                 <circle class="f-icons-in-sm-crcl"></circle>
                                 <circle class="f-icons-in-m-crcl"></circle>
                             </g>
@@ -118,6 +136,9 @@
         </div>
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
+

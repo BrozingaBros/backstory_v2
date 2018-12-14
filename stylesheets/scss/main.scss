@@ -2,6 +2,9 @@
 @import "base/reset",
         "base/typography";
 
+//* =[ Vendor ]= *//
+@import "./vendor/slick";
+
 //* =[ Helpers ]= *//
 @import "helpers/variables",
         "helpers/functions",
@@ -25,3 +28,6 @@
         "pages/work_eefke_kiko",
         "pages/prijzen",
         "pages/contact";
+
+
+

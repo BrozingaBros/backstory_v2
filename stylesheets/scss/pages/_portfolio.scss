@@ -1,40 +1,34 @@
 //* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
-
 .wrks-wrp {
-  @include flexbox($dir: column) {
-  }
+  @include flexbox( $dir: column ) {}
 }
 
 .wrks-wrp-tr {
-  @include flexbox($dir: column) {
-    margin-bottom: 5rem;
+  @include flexbox( $dir: column ) {
+    margin-bottom: $gutter-lg;
   }
 }
 
-//* =[ Portfolio - Title ]= *//
+//* =[ portfolio - title ]= *//
 .wrks-wrp-t {
-  @include flexbox($just: center, $ali: center){
-    margin-bottom: 2rem;
-  }
+  @include flexbox( $just: center, $ali: center ){}
 }
 
 .wrks-t-h2 {
-  font-family: $primary-font;
-  font-weight: 600;
-  font-size: $font-size-lg-mb;
-  padding: 0 0.25rem;
-  box-shadow: inset 0 -.7rem 0 0 $box-shadow-color;
+  @include title-h3-mb( $col: $primary-color ) {
+    padding: 0 0.25rem;
+    box-shadow: inset 0 -1.1rem 0 0 $box-shadow-color;
+  }
 }
 
 //* =[ Portfolio - Content ]= *//
 .wrks-wrp-c {
-  @include flexbox($dir:column, $ali: flex-start) {
-  }
+  @include flexbox( $dir:column, $ali: flex-start ) {}
 }
 
 .wrk {
   width: 100%;
-  margin: 0 0 2rem 0;
+  margin: $gutter-s 0 0 0;
   text-align: center;
 }
 
@@ -48,10 +42,10 @@
   width: 100%;
 }
 
-.wrk-t-h3 {
-  font-family: $tertiary-font;
-  font-size: $font-size-rg-mb;
-  margin: .5rem 0 2rem 0;
+.wrk-t-h4 {
+  @include title-h4-mb( $col:$primary-color ) {
+    margin: $gutter-xs 0 $gutter-s 0;
+  }
 }
 
 //* ===[ SMALL BREAKPOINT - landscape phones]=== *//
@@ -67,16 +61,15 @@
 @media only screen and (min-width: $break-l) {
   //* =[ Portfolio - Content ]= *//
   .wrks-wrp {
-    margin-top: 6rem;
+    margin-top: $gutter-lg;
   }
 
   .wrks-wrp-t {
-    margin-bottom: 2rem;
+    margin-bottom: $gutter-s;
   }
 
   .wrks-wrp-c {
-    @include flexbox($dir:row, $just:space-between, $ali:center) {
-    }
+    @include flexbox( $dir:row, $just:space-between, $ali:center ) {}
   }
 
   .wrk {
@@ -84,9 +77,21 @@
     margin: 0;
   }
 
-  .wrk-t-h3 {
-    margin: 1rem 0 0 0;
+  .wrk-t-h4 {
+    margin: $gutter-xs 0 0 0;
   }
+
+
+.wrk-img {
+  width: 100%;
+  transition: .4s ease-in-out;
+  transform: scale(1.00, 1.00);
+  &:hover {
+    opacity: .5;
+    transition: .4s ease-in-out;
+    transform: scale(1.01, 1.01);
+  }
+}
 }
 
 //* ===[ X-LARGE BREAKPOINT - xl-desktops ]=== *//

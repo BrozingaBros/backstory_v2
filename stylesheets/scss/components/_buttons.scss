@@ -3,7 +3,7 @@
 //* =[ button ]= *//
 .index-main-photo-shoot-spotlight-article-button {
   @include button {
-    width: 50%;
+    width: 100%;
     margin-top: 6rem;
     font-size: $font-size-rg-mb;
   }
@@ -91,8 +91,9 @@
   .index-main-photo-shoot-spotlight-article-button {
     @include button {
       position: absolute;
+      width: 50%;
       bottom: 0;
-      left: 32%;
+      left: 25%;
       cursor: pointer;
       font-size: $font-size-rg-dt;
       &:hover {
