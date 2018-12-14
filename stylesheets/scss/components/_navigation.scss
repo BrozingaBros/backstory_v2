@@ -1,19 +1,18 @@
 .nav__submenu {
   background-color: #fff;
   border: 0 solid;
-  border-bottom-width: .2rem;
+  border-bottom-width: .5rem;
   display: none;
   font-family: $primary-font;
   font-size: $font-size-rg-dt;
   padding-top: 1rem;
-  padding-right: 1.7rem;
   opacity: 0;
   position: absolute;
   visibility: hidden;
   z-index: 1000;
 
   &-item {
-    padding: .5rem 0 .5rem .5rem;
+    padding: .5rem 4.5rem .5rem .5rem;
     text-align: left;
   }
 }
