@@ -71,7 +71,7 @@
 }
 
 .nav-body-list-wrapper--shown {
-  height: 20rem;
+  height: 40rem;
   opacity: 1;
   border-bottom: 1px solid $primary-color;
   transition: .2s ease-in-out;
@@ -96,6 +96,11 @@
   text-align: center;
   text-decoration: none;
   color: $primary-color;
+}
+
+.nav-body-list-link-drpd {
+  color: $secondary-color;
+  background-color: $primary-color;
 }
 
 //* ===[ SMALL BREAKPOINT - landscape phones]=== *//
@@ -174,6 +179,12 @@
       color: $hover-color;
     }
   }
+
+  .nav-body-list-link-drpd {
+    color: $primary-color;
+    background-color: initial;
+  }
+
 
   .dropdown {
     background-image: url("/images/all/dropdown_arrow.svg");
