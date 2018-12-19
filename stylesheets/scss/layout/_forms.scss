@@ -19,20 +19,17 @@
 
 .cnt-b-c-inp {
   width: 100%;
-  text-align: center;
-  background: $secondary-color;
+  text-align: left;
+  background-color: $secondary-color;
   font-family: $primary-font;
   color: $primary-color;
   font-size: $font-size-rg-mb;
   font-weight: 600;
   border: 1px solid $primary-color;
-  border-radius: 0;
+  -webkit-border-radius: 0;
   outline: $primary-color;
   padding: .7rem 2rem 1rem 2rem;
   margin: 0 0 2rem;
-}
-.cnt-b-c-inp-slc{
-  direction: rtl;
 }
 
 //* ===[ LARGE BREAKPOINT - desktops ]=== *//
@@ -55,7 +52,4 @@
   .cnt-b-c-frm-rw-50 {
     width: 48%;
   }
-
-
-
 }
