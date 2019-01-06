@@ -58,14 +58,14 @@
 }
 
 .success-msg {
-  border: 1px solid #8fdf48;
+  border: 1px solid $success-color;
   font-family: $primary-font;
   font-size: $font-size-rg-mb;
   font-weight: 600;
-  color: #8fdf48;
+  color: $success-color;
   width: 100%;
   text-align: center;
-  padding: 1.6rem 1rem 2rem 1rem;
+  padding: 1.6rem 1rem 2rem;
 }
 
 
@@ -111,9 +111,9 @@
   }
 
   .success-msg {
-    border: 2px solid #8fdf48;
+    border: 2px solid $success-color;
     font-size: $font-size-md-dt;
-    padding: 2.4rem 1rem 3rem 1rem;
+    padding: 2.4rem 1rem 3rem;
   }
 
 }
