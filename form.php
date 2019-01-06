@@ -2,5 +2,6 @@
 $formData = $_POST;
 
 $mail = mail('sebastian.vuye@gmail.com', 'Contactformulier Backstory', $formData['client-comment']);
-
-include "contact.html";
+if ($mail) {
+    include "contact.html";
+}
