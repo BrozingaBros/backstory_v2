@@ -559,6 +559,9 @@ html {
 
   .cnt-b-c-frm-rw-50 {
     width: 48%; } }
+.index-main-top-image {
+  max-width: 100%; }
+
 .index-main-quote-wrapper {
   display: flex;
   justify-content: center;
