@@ -1,0 +1,202 @@
+//* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
+.header {
+  width: 100%;
+  margin: $gutter-s auto $gutter-lg auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav-body {
+  @include flexbox( $dir: column, $just: center, $ali: center ) {
+    width: 100%;
+  }
+}
+
+.nav-body-r-menu-wrpr {
+  @include flexbox( $just: center, $ali: center) {
+    width: 80%;
+    margin: 0;
+    background: $secondary-color;
+    border-top: 1px solid $primary-color;
+    border-bottom: 1px solid $primary-color;
+
+  }
+  .nav-body-r-menu-h2 {
+    padding: .6rem 0 1rem 0;
+    font-family: $primary-font;
+    font-size: $font-size-rg-mb;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: $secondary-color;
+  }
+}
+
+.nav-body-logo-wrapper {
+  width: 100%;
+  order: 3;
+  margin-top: $gutter-lg;
+  text-align: center;
+}
+
+.nav-body-logo {
+  width: 50%;
+}
+
+.nav-body-logo-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-color;
+  }
+}
+
+.nav-body-list-wrapper {
+  @include flexbox( $dir: column, $just: center, $ali: center) {
+    width: 80%;
+    height: 0;
+    opacity: 0;
+    list-style: none;
+    background: $secondary-color;
+    transition: .2s ease-in-out;
+    transform: translate(0, -5px);
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
+
+.nav-body-list-wrapper--shown {
+  height: 45rem;
+  opacity: 1;
+  border-bottom: 1px solid $primary-color;
+  transition: .2s ease-in-out;
+  transform: translate(0, 5px);
+  visibility: visible;
+  overflow: hidden;
+}
+
+.nav-body-list-item {
+  display: block;
+  width: 100%;
+  margin-bottom: $gutter-s;
+}
+
+.nav-body-list-link {
+  display: block;
+  width: 100%;
+  font-family: $primary-font;
+  font-size: $font-size-rg-mb;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.nav-body-list-link-drpd {
+  color: $secondary-color;
+  background-color: $primary-color;
+}
+
+//* ===[ SMALL BREAKPOINT - landscape phones]=== *//
+@media only screen and (min-width: $break-s) {
+  .nav-body-logo {
+    width: 30%;
+  }
+}
+
+//* ===[ MEDIUM BREAKPOINT - tablets ]=== *//
+@media only screen and (min-width: $break-m) {
+  .nav-body-logo {
+    width: 20%;
+  }
+}
+
+//* ===[ LARGE BREAKPOINT - desktops ]=== *//
+@media only screen and (min-width: $break-l) {
+  .header {
+    margin: $gutter-lg auto $gutter-xs auto;
+  }
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .nav-body {
+    @include flexbox( $dir: row, $just: space-between, $ali: flex-end ) {
+      width: 100%;
+    }
+  }
+
+  .nav-body-r-menu-wrpr {
+    display:none;
+    }
+
+  .nav-body-r-menu-h2 {
+    display:none;
+  }
+
+  .nav-body-logo-wrapper {
+    width: 20%;
+    margin-top: 0;
+    order: initial;
+    text-align: left;
+  }
+  
+  .nav-body-logo {
+    width: 100%;
+  }
+
+  .nav-body-list-wrapper {
+    @include flexbox( $dir: row, $just: flex-end, $ali: flex-end ) {
+      width: 100%;
+      height: inherit;
+      margin-top: 0;
+      opacity: 1;
+      transform: none;
+      visibility: visible;
+    }
+  }
+
+  .nav-body-list-item {
+    display: inline;
+    width: initial;
+    margin: 0 0 0 $gutter-s;
+  }
+
+  .nav-body-list-link {
+    display: inline;
+    text-align: right;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $hover-color;
+    }
+  }
+
+  .nav-body-list-link-drpd {
+    color: $primary-color;
+    background-color: initial;
+  }
+
+
+  .dropdown {
+    background-image: url("/images/all/dropdown_arrow.svg");
+    background-size: .8rem;
+    background-repeat: no-repeat;
+    background-position: right 1.1rem;
+    padding-right: 1.1rem;
+    &:hover {
+      background-image: url("/images/all/dropdown_arrow_hover.svg");
+    }
+    &:focus {
+      background-image: url("/images/all/dropdown_arrow_hover.svg");
+    }
+  }
+}

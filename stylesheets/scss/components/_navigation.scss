@@ -1,0 +1,62 @@
+//* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
+.nav__submenu {
+  border: 1px solid;
+  border-bottom-width: .5rem;
+  display: block;
+  font-family: $primary-font;
+  font-size: $font-size-rg-mb;
+  padding-top: 1rem;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+
+  &-item {
+    margin-bottom: 1rem;
+  }
+}
+
+/**
+Todo: put this in a media query
+ */
+.nav-body-list-link:hover + .nav__submenu,
+.nav-item-submenu:hover .nav__submenu,
+.nav__submenu:hover {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+//* ===[ LARGE BREAKPOINT - desktops ]=== *//
+@media only screen and (min-width: $break-l) {
+  .nav__submenu {
+    background-color: #fff;
+    border: 0 solid;
+    border-bottom-width: .5rem;
+    display: none;
+    font-family: $primary-font;
+    font-size: $font-size-rg-dt;
+    padding-top: 1rem;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1000;
+
+    &-item {
+      padding: .5rem 1rem .5rem 1rem;
+      text-align: left;
+    }
+  }
+
+  /**
+  Todo: put this in a media query
+   */
+  .nav-body-list-link:hover + .nav__submenu,
+  .nav-item-submenu:hover .nav__submenu,
+  .nav__submenu:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+

@@ -1,0 +1,41 @@
+//* ===[ COLORS ]=== *//
+$primary-color: #070709; // black text color
+$secondary-color: #ffffff; // white background color
+$hover-color: #b8b8b8; // lighter black hover on links
+$box-shadow-color: #b8b8b8; // grey box-shadow text color
+$success-color: #8fdf48; // light green success text color
+
+//* ===[ FONT STACKS ]=== *//
+$primary-font: 'Realtime', sans-serif;
+$secondary-font: 'Realtime-Light', sans-serif;
+$tertiary-font: 'Realtime-Bold', sans-serif;
+$quaternary-font: 'Realtime-Black', sans-serif;
+$quinary-font: 'Holland', sans-serif;
+
+//* ===[ FONT SIZES ]=== *//
+//* =[ mobile ]= *//
+$font-size-lg-mb: 2.6rem; // mobile quotes font size - h2 - 26px - line-height: 1.15em,
+$font-size-md-mb: 2.2rem; // mobile title font size - h3 - 22px - line-height: 1.14em,
+$font-size-rg-mb: 1.6rem; // mobile regular body font-size - body - 16px  - line-height: 1.25em,
+
+//* =[ tablet ]= *//
+$font-size-lg-tb: 2.6rem; // tablet quotes font size - h2 - 26px - line-height: 1.15em,
+$font-size-md-tb: 2.2rem; // tablet title font size - h3 - 22px - line-height: 1.14em,
+$font-size-rg-tb: 1.6rem; // tablet regular body font-size - body - 16px - line-height: 1.25em,
+
+//* =[ desktop ]= *//
+$font-size-lg-dt: 3.6rem; // desktop quotes font size h2 - 36px - line-height: 1.25em
+$font-size-md-dt: 2.8rem; // desktop title font size h3 - 28px - line-height: 1.25em
+$font-size-rg-dt: 1.6rem; // desktop regular body font-size - body - 16px - line-height: 1.375em
+
+//* ===[ GUTTER ]=== *//
+$gutter-xs: 1rem; // x-tra small gutter
+$gutter-s: 2rem; // small gutter
+$gutter-lg: 5rem; // large gutter
+$gutter-xlg: 15rem; // x-tra large gutter
+
+//* ===[ BREAKPOINTS ]=== *//
+$break-s: 576px;   // small devices - landscape phones - less than 576px,
+$break-m: 768px;    // medium devices - tablets - 768px and up,
+$break-l: 992px;    // large devices - desktops - 992px and up,
+$break-xl: 1200px   // x-large devices - x-large desktops - 1200px and up.

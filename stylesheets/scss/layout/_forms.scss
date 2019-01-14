@@ -1,0 +1,55 @@
+//* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
+.cnt-b-c-frm-wrp {
+  width: 80%;
+}
+
+.cnt-b-c-frm-rw {
+  width: 100%;
+  text-align: center;
+}
+
+.cnt-b-c-frm-lbl {
+  display: block;
+  width: 100%;
+  font-family: $primary-font;
+  color: $primary-color;
+  font-size: $font-size-rg-mb;
+  margin: 0 0 1rem 0;
+}
+
+.cnt-b-c-inp {
+  width: 100%;
+  text-align: left;
+  background-color: $secondary-color;
+  font-family: $primary-font;
+  color: $primary-color;
+  font-size: $font-size-rg-mb;
+  font-weight: 600;
+  border: 1px solid $primary-color;
+  -webkit-border-radius: 0;
+  outline: $primary-color;
+  padding: .7rem 2rem 1rem 2rem;
+  margin: 0 0 2rem;
+}
+
+//* ===[ LARGE BREAKPOINT - desktops ]=== *//
+@media only screen and (min-width: $break-l) {
+  .cnt-b-c-frm-wrp {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+  }
+  .cnt-b-c-frm-rw {
+    text-align: left;
+  }
+
+  .cnt-b-c-frm-rw-wrp {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cnt-b-c-frm-rw-50 {
+    width: 48%;
+  }
+}

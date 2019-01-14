@@ -1,0 +1,151 @@
+//* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//$
+.prc-t-wrp {
+  width: 100%;
+}
+
+.prc-t-c-wrp {
+  @include flexbox($dir:column, $just: center, $ali: center) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.prc-t-c-tit {
+  font-family: $tertiary-font;
+  font-size: $font-size-md-mb;
+  line-height: 1.14;
+  color: $primary-color;
+  &-bxs {
+    padding: 0 0.25rem;
+    box-shadow: inset 0 -1.1rem 0 0 $box-shadow-color;
+  }
+}
+
+.prc-t-c-cnt {
+  width: 80%;
+  font-family: $secondary-font;
+  color: $primary-color;
+  font-size: $font-size-rg-mb;
+  line-height: 1.25;
+  margin-top: 2rem;
+}
+
+.prc-t-img-wrp {
+  width: 100%;
+  margin: 2rem 0 0;
+}
+
+.prc-t-img {
+  width: 100%;
+}
+
+.prc-b-wrp {
+  @include flexbox($dir: column, $just: center, $ali: center) {
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+}
+
+.prc-b-tb-wrp {
+  width: 80%;
+  text-align: center;
+  border: 2px solid $primary-color;
+}
+
+.prc-b-tb-tit {
+  font-family: $tertiary-font;
+  font-size: $font-size-md-mb;
+  line-height: 1.14;
+  color: $primary-color;
+  border-bottom: 2px solid $primary-color;
+  margin: 0 0 2rem;
+  padding: 1.2rem 0 2rem;
+}
+
+.prc-b-tb-li {
+  width: 100%;
+  font-family: $secondary-font;
+  color: $primary-color;
+  font-size: $font-size-rg-mb;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+.prc-b-tb-li-lt {
+  text-decoration: line-through;
+}
+
+.prc-b-tb-btn {
+  width: 100%;
+  font-family: $tertiary-font;
+  font-size: $font-size-md-mb;
+  line-height: 1.14;
+  color: $primary-color;
+  background: $secondary-color;
+  border: 0;
+  margin: 4rem 0 2rem;
+}
+
+.prc-b-tb-wrp-01,
+.prc-b-tb-wrp-02 {
+  border-bottom: 0;
+}
+
+//* ===[ SMALL BREAKPOINT - landscape phones]=== *//
+@media only screen and (min-width: $break-s) {}
+
+//* ===[ MEDIUM BREAKPOINT - tablets ]=== *//
+@media only screen and (min-width: $break-m) {
+  .prc-t-c-cnt {
+    width: 100%;
+  }
+
+  .prc-b-tb-wrp {
+    width: 100%;
+  }
+
+
+}
+
+//* ===[ LARGE BREAKPOINT - desktops ]=== *//
+@media only screen and (min-width: $break-l) {
+  .prc-t-wrp {
+   margin: 6rem 0 0;
+  }
+
+  .prc-b-wrp {
+    @include flexbox($dir: row, $just: center, $ali: flex-start) {
+    }
+  }
+
+  .prc-b-tb-wrp-01,
+  .prc-b-tb-wrp-02 {
+    border-bottom: 2px solid $primary-color;
+    border-right: 0;
+  }
+
+  .prc-t-c-tit {
+    font-size: $font-size-md-dt;
+    line-height: 1.25;
+    &-bxs {
+      box-shadow: inset 0 -1.2rem 0 0 $box-shadow-color;
+    }
+  }
+
+  .prc-t-c-cnt {
+    font-size: $font-size-rg-dt;
+    line-height: 1.375;
+  }
+
+  .prc-b-tb-tit {
+    font-size: $font-size-md-dt;
+    line-height: 1.25;
+  }
+
+  .prc-b-tb-li {
+    font-size: $font-size-rg-dt;
+    line-height: 1.375;
+  }
+
+
+}

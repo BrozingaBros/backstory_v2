@@ -1,0 +1,72 @@
+//* ===[ FLEXBOX ]=== *//
+@mixin flexbox ($disp: flex,
+                 $dir: null,
+                $just: null,
+                 $ali: null) {
+  display: $disp;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $ali;
+  @content
+}
+
+//* ===[ BUTTON ]=== *//
+@mixin button {
+  border: 1px solid $primary-color;
+  background: $secondary-color;
+  font-family: $primary-font;
+  font-weight: 600;
+  @content
+}
+
+//* ===[ TITLES ]=== *//
+//* =[ mobile ]= *//
+@mixin title-h2-mb ( $col: null) {
+  font-family: $primary-font;
+  font-size: $font-size-lg-mb;
+  font-weight: normal;
+  line-height: 1.15;
+  color: $col;
+  @content
+}
+
+@mixin title-h3-mb ( $col: null) {
+  font-family: $tertiary-font;
+  font-size: $font-size-md-mb;
+  line-height: 1.14;
+  color: $col;
+  @content
+}
+
+@mixin title-h4-mb ( $col: null) {
+  font-family: $tertiary-font;
+  font-size: $font-size-rg-mb;
+  line-height: 1.25;
+  color: $col;
+  @content
+}
+
+@mixin text-p-mb ( $col: null) {
+  font-family: $secondary-font;
+  font-size: $font-size-rg-mb;
+  line-height: 1.25;
+  color: $col;
+  @content
+}
+
+//* =[ desktop ]= *//
+@mixin title-h3-dt ( $col: null) {
+  font-family: $tertiary-font;
+  font-size: $font-size-md-dt;
+  line-height: 1.25;
+  color: $col;
+  @content
+}
+
+@mixin text-p-dt ( $col: null) {
+  font-family: $secondary-font;
+  font-size: $font-size-rg-dt;
+  line-height: 1.375;
+  color: $col;
+  @content
+}

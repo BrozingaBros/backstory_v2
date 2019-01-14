@@ -1,0 +1,138 @@
+//* ===[ X-SMALL BREAKPOINT - portrait phones ]=== *//
+
+//* =[ index top image ]= *//
+.index-main-top-image {
+  max-width: 100%;
+}
+
+//* =[ index quote ]= *//
+.index-main-quote-wrapper {
+  @include flexbox ($just: center) {
+    width: 100%;
+    align-content: center;
+    margin-top: 5rem;
+  }
+}
+
+.slick-slide {
+  height: auto;
+}
+
+.index-main-quote {
+  @include title-h2-mb( $col: $primary-color) {
+    padding: 0 4rem;
+    text-align: center;
+  }
+  &-box-shadow {
+    padding: 0 0.25rem;
+    box-shadow: inset 0 -1.2rem 0 0 $box-shadow-color;
+    font-family: $tertiary-font;
+  }
+}
+
+//* =[ index spotlight ]= *//
+.index-main-photo-shoot-spotlight-wrapper {
+  @include flexbox($dir: column, $just: center, $ali: center ) {
+    width: 100%;
+    margin-top: 10rem;
+  }
+}
+
+.index-main-photo-shoot-spotlight-image-wrapper {
+  width: 100%;
+    .index-main-photo-shoot-spotlight-image {
+      width: 100%;
+    }
+}
+
+.index-main-photo-shoot-spotlight-article-wrapper {
+  width: 80%;
+  text-align: center;
+  .index-main-photo-shoot-spotlight-article-h3 {
+    @include title-h3-mb( $col: $primary-color) {
+      margin-top: 2rem;
+    }
+    &-boxshadow {
+      padding: 0 0.25rem;
+      box-shadow: inset 0 -1.1rem 0 0 $box-shadow-color;
+    }
+  }
+}
+
+.index-main-photo-shoot-spotlight-article-p {
+  @include text-p-mb( $col: $primary-color) {
+    margin-top: 2rem;
+  }
+}
+
+//* ===[ SMALL BREAKPOINT - landscape phones]=== *//
+@media only screen and (min-width: $break-s) {
+  //* =[ index main quote ]= *//
+  .index-main-quote {
+    padding: 0 20rem;
+  }
+}
+
+//* ===[ MEDIUM BREAKPOINT - tablets]=== *//
+@media only screen and (min-width: $break-m) {
+  //* =[ index main quote ]= *//
+  .index-main-quote {
+    padding: 0 20rem;
+  }
+}
+
+//* ===[ LARGE BREAKPOINT - desktops ]=== *//
+@media only screen and (min-width: $break-l) {
+  //* =[ index main top image ]= *//
+  .index-main-top-image-wrapper {
+    margin-top: 1rem;
+  }
+  //* =[ index main quote ]= *//
+  .index-main-quote {
+    font-size: $font-size-lg-dt;
+    line-height: 1.25;
+    padding: 0 20rem;
+    &-box-shadow {
+      padding: 0 0.25rem;
+      box-shadow: inset 0 -1.6rem 0 0 $box-shadow-color;
+    }
+  }
+
+  //* =[ index spotlight image ]= *//
+  .index-main-photo-shoot-spotlight-wrapper {
+    @include flexbox( $dir: row, $just: space-between) {
+      width: 100%;
+      align-items: stretch;
+    }
+  }
+
+  .index-main-photo-shoot-spotlight-image-wrapper {
+    width: 48%;
+  }
+
+  .index-main-photo-shoot-spotlight-article-wrapper {
+    width: 48%;
+    position: relative;
+    padding: 0;
+    .index-main-photo-shoot-spotlight-article-h3 {
+      @include title-h3-dt( $col: $primary-color) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .index-main-photo-shoot-spotlight-article-p {
+    @include text-p-dt( $col: $primary-color) {
+      margin-top: 2rem;
+      padding-bottom: 20rem;
+    }
+  }
+}
+
+//* ===[ X-LARGE BREAKPOINT - xl-desktops ]=== *//
+@media only screen and (min-width: $break-xl) {
+  //* =[ Index main top image ]= *//
+  .index-main-top-image-wrapper {
+    margin-top: 1rem;
+  }
+}
