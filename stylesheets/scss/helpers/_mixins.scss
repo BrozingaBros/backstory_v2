@@ -16,7 +16,6 @@
   background: $secondary-color;
   font-family: $primary-font;
   font-weight: 600;
-  padding: .6rem 1.5rem 1rem 1.5rem;
   @content
 }
 

@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -27,9 +28,15 @@
                 <li class="nav-body-list-item nav-item-submenu">
                     <a href=# class="nav-body-list-link nav-body-list-link-drpd dropdown">Portfolio</a>
                     <ul class="nav__submenu">
-                        <li class="nav__submenu-item"><a href="portfolio_wedding.html" class="nav-body-list-link">Huwelijk</a></li>
-                        <li class="nav__submenu-item"><a href="portfolio_verliefd_verloofd.html" class="nav-body-list-link">Verliefd & Verloofd</a></li>
-                        <li class="nav__submenu-item"><a href="portfolio_newborns.html" class="nav-body-list-link">Portret & Familie</a></li>
+                        <li class="nav__submenu-item">
+                            <a href="portfolio_wedding.html" class="nav-body-list-link">Huwelijk</a>
+                        </li>
+                        <li class="nav__submenu-item">
+                            <a href="portfolio_verliefd_verloofd.html" class="nav-body-list-link">Verliefd & Verloofd</a>
+                        </li>
+                        <li class="nav__submenu-item">
+                            <a href="portfolio_newborns.html" class="nav-body-list-link">Portret & Familie</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-body-list-item">
@@ -52,7 +59,7 @@
 </header>
 <main class="main">
     <div class="container">
-        <div class="index-slideshow" id="slideshow">
+        <figure class="index-slideshow" id="slideshow">
                 <img src="images/all/index-main-top-image.jpg" alt="Main top image of the photo shoot of Kiko and Eefke"
                      title="Main top image" class="index-main-top-image">
 
@@ -61,23 +68,21 @@
 
                 <img src="images/all/index-main-top-image_03.jpg" alt="Main top image of the photo shoot of Kiko and Eefke"
                      title="Main top image" class="index-main-top-image">
-        </div>
-
-
-
-        <section class="index-main-quote-wrapper">
+        </figure>
+        <article class="index-main-quote-wrapper">
             <h2 class="index-main-quote">
                 <span class="index-main-quote-box-shadow">Backstory</span> lorem ipsum dolor sit amet, consectetur
                 adipiscing elit morbi//
             </h2>
-        </section>
+        </article>
 
-        <section class="index-main-photo-shoot-spotlight-wrapper">
+        <article class="index-main-photo-shoot-spotlight-wrapper">
             <figure class="index-main-photo-shoot-spotlight-image-wrapper">
-                <img src="images/all/index-main-photo-shoot-spotlight_image.jpg" class="index-main-photo-shoot-spotlight-image">
+                <img src="images/all/index-main-photo-shoot-spotlight_image.jpg" class="index-main-photo-shoot-spotlight-image"
+                alt="The newlyweds Eefke and Kiko holding each other in the forrest during their wedding photo shoot">
             </figure>
 
-            <article class="index-main-photo-shoot-spotlight-article-wrapper">
+            <section class="index-main-photo-shoot-spotlight-article-wrapper">
                 <h3 class="index-main-photo-shoot-spotlight-article-h3">
                     <span class="index-main-photo-shoot-spotlight-article-h3-boxshadow">Eefke and Kiko</span>
                 </h3>
@@ -91,9 +96,9 @@
                     trouwlocatie werd ik overdonderd door een sprookjesachtige landhuis waar hun trouw plaatsvond.
                     Hun avontuur kon nu echt beginnen.
                 </p>
-                <a href="work_eefke_kiko.html"><button type="submit" class="index-main-photo-shoot-spotlight-article-button">Bekijken</button></a>
-            </article>
-        </section>
+                <button type="submit" class="index-main-photo-shoot-spotlight-article-button"><a href="work_eefke_kiko.html" class="index-btn-lnk">Bekijken</a></button>
+            </section>
+        </article>
     </div>
 </main>
 <footer class="footer">
@@ -111,7 +116,14 @@
                             <g id="facebook">
                                 <rect class="f-icons-fb-bq"></rect>
                                 <path class="f-icons-fb-lg"
-                                      d="M50.559322,76.0677966 L50.559322,48.6283038 L60.8782452,48.6283038 L62.3418626,38.0746527 L50.559322,38.0746527 L50.559322,30.9344492 C50.559322,27.6199421 52.0311176,25.3690467 56.7326872,25.3690467 L63.1186441,25.3690467 L63.1186441,15.3348337 C62.08021,15.1946664 58.1308935,14.8813559 53.9935117,14.8813559 C45.3344473,14.8813559 40.0932203,20.2076507 40.0932203,29.9862691 L40.0932203,38.0746527 L29.6271186,38.0746527 L29.6271186,48.6283038 L40.0932203,48.6283038 L40.0932203,76.0677966 L50.559322,76.0677966 Z"></path>
+                                      d="M50.559322,76.0677966 L50.559322,48.6283038 L60.8782452,48.6283038
+                                      L62.3418626,38.0746527 L50.559322,38.0746527 L50.559322,30.9344492
+                                      C50.559322,27.6199421 52.0311176,25.3690467 56.7326872,25.3690467
+                                      L63.1186441,25.3690467 L63.1186441,15.3348337 C62.08021,15.1946664
+                                      58.1308935,14.8813559 53.9935117,14.8813559 C45.3344473,14.8813559
+                                      40.0932203,20.2076507 40.0932203,29.9862691 L40.0932203,38.0746527
+                                      L29.6271186,38.0746527 L29.6271186,48.6283038 L40.0932203,48.6283038
+                                      L40.0932203,76.0677966 L50.559322,76.0677966 Z"></path>
                             </g>
                         </svg>
                     </a>
@@ -137,9 +149,9 @@
         </div>
     </div>
 </footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
-

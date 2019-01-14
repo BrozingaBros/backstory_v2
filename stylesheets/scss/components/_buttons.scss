@@ -9,6 +9,19 @@
   }
 }
 
+.index-btn-lnk {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  padding: .6rem 1.5rem 1rem 1.5rem;
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
 .cnt-b-c-btn {
   @include button {
     width: 100%;
