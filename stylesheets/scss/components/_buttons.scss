@@ -11,8 +11,14 @@
 
 .index-btn-lnk {
   display: block;
+  width: 50%;
+  margin: 6rem auto 0;
+  border: 1px solid $primary-color;
+  font-size: $font-size-rg-mb;
+  background: $secondary-color;
+  font-family: $primary-font;
+  font-weight: 600;
   text-decoration: none;
-  width: 100%;
   padding: .6rem 1.5rem 1rem 1.5rem;
   &:visited,
   &:hover,
@@ -101,19 +107,19 @@
 
 @media only screen and (min-width: $break-l) {
   //* =[ button ]= *//
-  .index-main-photo-shoot-spotlight-article-button {
-    @include button {
+  .index-btn-lnk {
       position: absolute;
       width: 50%;
       bottom: 0;
       left: 25%;
       cursor: pointer;
       font-size: $font-size-rg-dt;
+      margin-top: 6rem;
       &:hover {
         background-color: $hover-color;
       }
     }
-  }
+
 
   .footer-icons-fb-wrapper {
     margin: 0 .2rem 0 0;
