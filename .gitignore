@@ -3,7 +3,6 @@ node_modules/
 .DS_Store
 .idea/
 .sass-cache
-css/**
 .DS_Store?
 ._*
 .Spotlight-V100
@@ -13,4 +12,3 @@ Thumbs.db
 .iws
 workspace.xml
 tasks.xml
-stylesheets/css/**
