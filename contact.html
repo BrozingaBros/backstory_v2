@@ -106,30 +106,29 @@
                     <label for="clientShootDate" class="cnt-b-c-frm-lbl">Datum Fotoshoot</label>
                     <input type="date"  name="clientShootDate" id="clientShootDate" class="cnt-b-c-inp cnt-b-c-inp-dt">
                 </div>
-
-                <div class="cnt-b-c-frm-rw-wrp">
-                <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
+                <div class="cnt-b-c-frm-rw">
                     <label for="clientShootType" class="cnt-b-c-frm-lbl">Soort Fotoshoot</label>
                     <select id="clientShootType" name="clientShootType" class="cnt-b-c-inp cnt-b-c-inp-slc">
                         <option value="none"></option>
-                        <option value="trouw">Trouw</option>
-                        <option value="familie">Familie</option>
-                        <option value="church-shit">Church Shit</option>
-                        <option value="fotoshoot">Fotoshoot</option>
+                        <optgroup label="Huwelijk">
+                            <option value="trouw01">Huwelijk Optie 01</option>
+                            <option value="trouw02">Huwelijk Optie 02</option>
+                            <option value="trouw03">Huwelijk Optie 03</option>
+                        </optgroup>
+                        <optgroup label="Verliefd &amp; Verloofd">
+                            <option value="verloovingshoot">Verloovingshoot</option>
+                            <option value="loveshoot">Love Shoot</option>
+                        </optgroup>
+                        <optgroup label="Portret &amp; Familie">
+                            <option value="zwangerschap">Zwangerschap</option>
+                            <option value="newborns">Newborns</option>
+                            <option value="familie">Familie</option>
+                            <option value="communie">Communie</option>
+                        </optgroup>
+                        <optgroup label="Andere">
+                            <option value="andere">Andere</option>
+                        </optgroup>
                     </select>
-                </div>
-
-
-                    <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
-                        <label for="clientShootOption" class="cnt-b-c-frm-lbl">Optie</label>
-                        <select id="clientShootOption" name="clientShootOption" class="cnt-b-c-inp cnt-b-c-inp-slc">
-                            <option value="none"></option>
-                            <option value="option01">Optie 01</option>
-                            <option value="option02">Optie 02</option>
-                            <option value="option03">Optie 03</option>
-                            <option value="option04">Optie 04</option>
-                        </select>
-                    </div>
                 </div>
                     <div class="cnt-b-c-frm-rw">
                         <label for="clientComment" class="cnt-b-c-frm-lbl">Vertel ons je verhaal<span class="required-asteriks">&#42;</span></label>
@@ -147,8 +146,6 @@
                 </div>
             </form>
         </section>
-
-
     </div>
 </main>
 <footer class="footer">
