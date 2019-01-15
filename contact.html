@@ -82,8 +82,8 @@
             <form action="form.php" method="post" class="cnt-b-c-frm-wrp">
                 <div class="cnt-b-c-frm-rw-wrp">
                     <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
-                    <label for="clientName" class="cnt-b-c-frm-lbl">Naam</label>
-                    <input type="text" name="clientName" id="clienName" class="cnt-b-c-inp">
+                        <label for="clientName" class="cnt-b-c-frm-lbl">Naam<span class="required-asteriks">&#42;</span></label>
+                    <input type="text" name="clientName" id="clientName" class="cnt-b-c-inp" required>
                 </div>
 
                 <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
@@ -93,8 +93,8 @@
                 </div>
 
                 <div class="cnt-b-c-frm-rw">
-                    <label for="clientEmail" class="cnt-b-c-frm-lbl">E-mailadres</label>
-                    <input type="email" name="clientEmail" id="clientEmail" class="cnt-b-c-inp">
+                    <label for="clientEmail" class="cnt-b-c-frm-lbl">E-mailadres<span class="required-asteriks">&#42;</span></label>
+                    <input type="email" name="clientEmail" id="clientEmail" class="cnt-b-c-inp" required>
                 </div>
 
                 <div class="cnt-b-c-frm-rw">
@@ -132,13 +132,19 @@
                     </div>
                 </div>
                     <div class="cnt-b-c-frm-rw">
-                        <label for="clientComment" class="cnt-b-c-frm-lbl">Verterl ons je verhaal</label>
-                        <textarea id="clientComment" name="clientComment" class="cnt-b-c-inp"></textarea>
+                        <label for="clientComment" class="cnt-b-c-frm-lbl">Vertel ons je verhaal<span class="required-asteriks">&#42;</span></label>
+                        <textarea id="clientComment" name="clientComment" class="cnt-b-c-inp" required></textarea>
                     </div>
 
-                    <div class="cnt-b-c-frm-rw">
-                        <button name="submitButton" class="cnt-b-c-btn">Verzenden</button>
+                <div class="cnt-b-c-frm-rw-wrp">
+                    <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
+                        <p class="required-info"><span class="required-asteriks">&#42;</span> is een verplicht veld </p>
                     </div>
+
+                    <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
+                            <button name="submitButton" class="cnt-b-c-btn">Verzenden</button>
+                    </div>
+                </div>
             </form>
         </section>
 
