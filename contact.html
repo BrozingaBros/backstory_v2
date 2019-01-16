@@ -82,8 +82,8 @@
             <form action="form.php" method="post" class="cnt-b-c-frm-wrp">
                 <div class="cnt-b-c-frm-rw-wrp">
                     <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
-                    <label for="clientName" class="cnt-b-c-frm-lbl">Naam</label>
-                    <input type="text" name="clientName" id="clienName" class="cnt-b-c-inp">
+                        <label for="clientName" class="cnt-b-c-frm-lbl">Naam<span class="required-asteriks">&#42;</span></label>
+                    <input type="text" name="clientName" id="clientName" class="cnt-b-c-inp" required>
                 </div>
 
                 <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
@@ -93,8 +93,8 @@
                 </div>
 
                 <div class="cnt-b-c-frm-rw">
-                    <label for="clientEmail" class="cnt-b-c-frm-lbl">E-mailadres</label>
-                    <input type="email" name="clientEmail" id="clientEmail" class="cnt-b-c-inp">
+                    <label for="clientEmail" class="cnt-b-c-frm-lbl">E-mailadres<span class="required-asteriks">&#42;</span></label>
+                    <input type="email" name="clientEmail" id="clientEmail" class="cnt-b-c-inp" required>
                 </div>
 
                 <div class="cnt-b-c-frm-rw">
@@ -104,45 +104,48 @@
 
                 <div class="cnt-b-c-frm-rw">
                     <label for="clientShootDate" class="cnt-b-c-frm-lbl">Datum Fotoshoot</label>
-                    <input type="date"  name="clientShootDate" id="clientShootDate" class="cnt-b-c-inp cnt-b-c-inp-dt">
+                    <input type="date" name="clientShootDate" id="clientShootDate" class="cnt-b-c-inp cnt-b-c-inp-dt">
                 </div>
-
-                <div class="cnt-b-c-frm-rw-wrp">
-                <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
+                <div class="cnt-b-c-frm-rw">
                     <label for="clientShootType" class="cnt-b-c-frm-lbl">Soort Fotoshoot</label>
                     <select id="clientShootType" name="clientShootType" class="cnt-b-c-inp cnt-b-c-inp-slc">
                         <option value="none"></option>
-                        <option value="trouw">Trouw</option>
-                        <option value="familie">Familie</option>
-                        <option value="church-shit">Church Shit</option>
-                        <option value="fotoshoot">Fotoshoot</option>
+                        <optgroup label="Huwelijk">
+                            <option value="trouw01">Huwelijk Optie 01</option>
+                            <option value="trouw02">Huwelijk Optie 02</option>
+                            <option value="trouw03">Huwelijk Optie 03</option>
+                        </optgroup>
+                        <optgroup label="Verliefd &amp; Verloofd">
+                            <option value="verloovingshoot">Verloovingshoot</option>
+                            <option value="loveshoot">Love Shoot</option>
+                        </optgroup>
+                        <optgroup label="Portret &amp; Familie">
+                            <option value="zwangerschap">Zwangerschap</option>
+                            <option value="newborns">Newborns</option>
+                            <option value="familie">Familie</option>
+                            <option value="communie">Communie</option>
+                        </optgroup>
+                        <optgroup label="Andere">
+                            <option value="andere">Andere</option>
+                        </optgroup>
                     </select>
                 </div>
+                    <div class="cnt-b-c-frm-rw">
+                        <label for="clientComment" class="cnt-b-c-frm-lbl">Vertel ons je verhaal<span class="required-asteriks">&#42;</span></label>
+                        <textarea id="clientComment" name="clientComment" class="cnt-b-c-inp" required></textarea>
+                    </div>
 
+                <div class="cnt-b-c-frm-rw-wrp">
+                    <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
+                        <p class="required-info"><span class="required-asteriks">&#42;</span> is een verplicht veld </p>
+                    </div>
 
                     <div class="cnt-b-c-frm-rw cnt-b-c-frm-rw-50">
-                        <label for="clientShootOption" class="cnt-b-c-frm-lbl">Optie</label>
-                        <select id="clientShootOption" name="clientShootOption" class="cnt-b-c-inp cnt-b-c-inp-slc">
-                            <option value="none"></option>
-                            <option value="option01">Optie 01</option>
-                            <option value="option02">Optie 02</option>
-                            <option value="option03">Optie 03</option>
-                            <option value="option04">Optie 04</option>
-                        </select>
+                            <button name="submitButton" class="cnt-b-c-btn">Verzenden</button>
                     </div>
                 </div>
-                    <div class="cnt-b-c-frm-rw">
-                        <label for="clientComment" class="cnt-b-c-frm-lbl">Verterl ons je verhaal</label>
-                        <textarea id="clientComment" name="clientComment" class="cnt-b-c-inp"></textarea>
-                    </div>
-
-                    <div class="cnt-b-c-frm-rw">
-                        <button name="submitButton" class="cnt-b-c-btn">Verzenden</button>
-                    </div>
             </form>
         </section>
-
-
     </div>
 </main>
 <footer class="footer">
@@ -154,28 +157,34 @@
             <div class="footer-icons-wrapper">
                 <figure class="footer-icons-fb-wrapper">
                     <a href="index.html" class="f-icons-fb-link">
-                        <?xml version="1.0" encoding="UTF-8"?>
-                        <svg class="f-icons-fb" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="facebook">
-                                <rect class="f-icons-fb-bq"></rect>
-                                <path class="f-icons-fb-lg"
-                                      d="M50.559322,76.0677966 L50.559322,48.6283038 L60.8782452,48.6283038 L62.3418626,38.0746527 L50.559322,38.0746527 L50.559322,30.9344492 C50.559322,27.6199421 52.0311176,25.3690467 56.7326872,25.3690467 L63.1186441,25.3690467 L63.1186441,15.3348337 C62.08021,15.1946664 58.1308935,14.8813559 53.9935117,14.8813559 C45.3344473,14.8813559 40.0932203,20.2076507 40.0932203,29.9862691 L40.0932203,38.0746527 L29.6271186,38.0746527 L29.6271186,48.6283038 L40.0932203,48.6283038 L40.0932203,76.0677966 L50.559322,76.0677966 Z"></path>
-                            </g>
+                        <svg class="f-icons-fb" width="3.5rem" height="3.5rem" viewBox="0 0 149 315" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill="black" d="M32.7656 315H98.0312V157.414H141.832C141.832 157.414
+                            145.934 131.984 147.934 104.18H98.2852V67.9141C98.2852 62.4961
+                            105.395 55.2188 112.441 55.2188H148.004V0H99.6367C31.1602 0
+                            32.7656 53.082 32.7656 61.0078V104.363H0.996094V157.395H32.7656V315Z" ></path>
                         </svg>
                     </a>
                 </figure>
                 <figure class="footer-icons-in-wrapper">
                     <a href="index.html" class="f-icons-in-link">
-                        <svg class="f-icons-in" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="instagram">
-                                <rect class="f-icons-in-bq"></rect>
-                                <path class="f-icons-in-lr-crcl"
-                                      d="M64,27 C64,18.716 57.284,12 49,12 C44.648,12 31.352,12 27,12 C18.716,12 12,18.716 12,27 C12,31.352 12,44.648 12,49 C12,57.284 18.716,64 27,64 C31.352,64 44.648,64 49,64 C57.284,64 64,57.284 64,49 C64,44.648 64,31.352 64,27 Z"></path>
-                                <circle class="f-icons-in-sm-crcl"></circle>
-                                <circle class="f-icons-in-m-crcl"></circle>
-                            </g>
+                        <svg class="f-icons-in" width="3.5rem" height="3.5rem" viewBox="0 0 388 388" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill="black" d="M256.426 68.0352H131.578C96.5273 68.0352 68.0156 96.5508 68.0156
+                            131.598V256.445C68.0156 291.496 96.5273 320.004 131.578 320.004H256.426C291.477
+                            320.004 319.984 291.496 319.984 256.445V131.598C319.984 96.5508 291.477
+                            68.0352 256.426 68.0352V68.0352ZM292.566 256.445C292.566 276.375 276.352 292.59
+                            256.426 292.59H131.578C111.652 292.59 95.4375 276.375 95.4375 256.445V131.598C95.4375
+                            111.672 111.652 95.4609 131.578 95.4609H256.426C276.352 95.4609 292.566 111.672 292.566
+                            131.598V256.445Z"></path>
+                            <path fill="black" d="M260.98 142.547C252.512 142.547 245.621 135.66 245.621 127.191C245.621 118.727
+                            252.512 111.84 260.98 111.84C269.449 111.84 276.336 118.727 276.336 127.191C276.336 135.66
+                            269.449 142.547 260.98 142.547V142.547Z"></path>
+                            <path fill="black" d="M193.996 129.129C158.219 129.129 129.105 158.238 129.105 194.02C129.105 229.801
+                            158.219 258.914 193.996 258.914C229.781 258.914 258.895 229.801 258.895 194.02C258.895
+                            158.242 229.781 129.129 193.996 129.129V129.129ZM193.996 231.5C173.344 231.5 156.523
+                            214.684 156.523 194.02C156.523 173.363 173.344 156.555 193.996 156.555C214.66 156.555
+                            231.469 173.363 231.469 194.02C231.469 214.684 214.66 231.5 193.996 231.5Z"></path>
                         </svg>
                     </a>
                 </figure>

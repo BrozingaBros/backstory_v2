@@ -11,8 +11,14 @@
 
 .index-btn-lnk {
   display: block;
+  width: 50%;
+  margin: 6rem auto 0;
+  border: 1px solid $primary-color;
+  font-size: $font-size-rg-mb;
+  background: $secondary-color;
+  font-family: $primary-font;
+  font-weight: 600;
   text-decoration: none;
-  width: 100%;
   padding: .6rem 1.5rem 1rem 1.5rem;
   &:visited,
   &:hover,
@@ -48,72 +54,33 @@
 
 //* =[ facebook ]= *//
 .f-icons-fb {
+  border: .1rem solid $primary-color;
+  padding: .6rem;
   width: 4rem;
-  stroke: $primary-color;
-  .f-icons-fb-lg {
-    fill:$primary-color;
-    stroke:$primary-color;
-    stroke-width:2;
-  }
-}
-
-.f-icons-fb-bq {
-  stroke:$primary-color;
-  stroke-width:2;
-  fill: none;
-  x:1;
-  y:1;
-  width:97%;
-  height: 97%;
+  height: 4rem;
 }
 
 //* =[ instagram ]= *//
 .f-icons-in {
+  border: .1rem solid $primary-color;
   width: 4rem;
-  .f-icons-in-bq {
-    stroke:$primary-color;
-    stroke-width: 4;
-    fill: none;
-    width: 100%;
-  }
-  .f-icons-in-lr-crcl {
-    stroke: $primary-color;
-    fill: none;
-    stroke-width:2;
-  }
-}
-
-.f-icons-in-sm-crcl{
-  fill: $primary-color;
-  stroke: none;
-  cx:53;
-  cy:23;
-  r:3
-}
-
-.f-icons-in-m-crcl {
-  fill: $primary-color;
-  stroke: none;
-  cx:38;
-  cy:38;
-  r:12;
+  height: 4rem;
 }
 
 @media only screen and (min-width: $break-l) {
   //* =[ button ]= *//
-  .index-main-photo-shoot-spotlight-article-button {
-    @include button {
+  .index-btn-lnk {
       position: absolute;
       width: 50%;
       bottom: 0;
       left: 25%;
       cursor: pointer;
       font-size: $font-size-rg-dt;
+      margin-top: 6rem;
       &:hover {
         background-color: $hover-color;
       }
     }
-  }
 
   .footer-icons-fb-wrapper {
     margin: 0 .2rem 0 0;
@@ -125,10 +92,12 @@
 
   .f-icons-fb {
     width: 3.5rem;
+    height: 3.5rem;
   }
 
   .f-icons-in {
     width: 3.5rem;
+    height: 3.5rem;
   }
 
   .cnt-b-c-btn {
@@ -137,6 +106,10 @@
       float: right;
       margin-top: 4rem;
       font-size: $font-size-rg-mb;
+      &:hover {
+        background-color: $hover-color;
+        cursor: pointer;
+      }
     }
   }
 }
