@@ -37,9 +37,32 @@
   -moz-appearance: none;
   background-image: url(/images/all/dropdown_arrow_form.svg);
   background-repeat: no-repeat;
-  background-position: right 3% bottom 50%;
+  background-position: right 5% bottom 50%;
   -webkit-background-size: 1rem;
   background-size: 1rem;
+}
+
+.cnt-b-c-inp-dt {
+  -webkit-appearance: none;
+  background-image: url(/images/all/dropdown_arrow_form.svg);
+  background-repeat: no-repeat;
+  background-position: right 5% bottom 50%;
+  -webkit-background-size: 1rem;
+  background-size: 1rem;
+  &::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+  }
+  &::-webkit-clear-button,
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 9999px $secondary-color;
 }
 
 .required-asteriks {
