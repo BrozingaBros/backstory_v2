@@ -4,7 +4,7 @@
   "description": "backstory_v2",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "sass --watch stylesheets/scss/main.scss:stylesheets/css/main.css & lite-server"
   },
   "repository": {
     "type": "git",
