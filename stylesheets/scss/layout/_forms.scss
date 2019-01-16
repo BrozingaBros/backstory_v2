@@ -32,6 +32,16 @@
   margin: 0 0 2rem;
 }
 
+.cnt-b-c-inp-slc {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(/images/all/dropdown_arrow_form.svg);
+  background-repeat: no-repeat;
+  background-position: right 3% bottom 50%;
+  -webkit-background-size: 1rem;
+  background-size: 1rem;
+}
+
 .required-asteriks {
   color: $required-color;
 }
