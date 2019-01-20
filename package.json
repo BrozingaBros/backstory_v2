@@ -4,7 +4,8 @@
   "description": "backstory_v2",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch stylesheets/scss/main.scss:stylesheets/css/main.css & lite-server"
+    "start": "sass --watch stylesheets/scss/main.scss:stylesheets/css/main.css & lite-server",
+    "build": "./node_modules/sass/sass.js stylesheets/scss/main.scss:stylesheets/css/main.css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/sebavuye/backstory_v2#readme",
   "devDependencies": {
-    "lite-server": "^2.4.0"
+    "lite-server": "^2.4.0",
+    "sass": "^1.16.1"
   }
 }
